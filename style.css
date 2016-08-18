@@ -2727,15 +2727,6 @@ html .cookie-explanation button.request-cookies:before,
 .footer-credits a {
   display: inline-block;
 }
-.home-page .panel-row-style {
-  padding: 0!important;
-}
-.home-page .content-wrapper {
-  padding: 0!important;
-}
-.home-page .page-wrap {
-  padding-bottom: 7.2rem;
-}
 .page-breadcrumb {
   margin: 2.4rem 0;
 }
@@ -3314,60 +3305,31 @@ form ol {
   color: #fff;
 }
 /* PLACE YOUR OWN CSS STYLING DOWN HERE WITH @IMPORTS */
-.header-wrap {
-  height: 100%;
-}
-.header-wrap .container,
-.header-wrap .row,
-.header-wrap .col-xs-12,
-.header-wrap .mainnav,
-.header-wrap .menu-menu-1-container,
-.header-wrap .menu {
-  height: 100%;
-}
-.header-wrap .menu {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
-#buddypress {
-  background: green;
-}
-#wpadminbar {
-  background: #4b263b;
-}
-#wpadminbar a.ab-item {
+.sf-menu > li > a {
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
   color: #fff;
 }
-#wpadminbar #adminbarsearch:before {
-  color: #fff;
-}
-#wpadminbar #adminbarsearch:before,
-#wpadminbar .ab-icon:before,
-#wpadminbar .ab-item:before {
-  color: #fff;
-}
-#wpadminbar .ab-empty-item,
-#wpadminbar a.ab-item,
-#wpadminbar > #wp-toolbar span.ab-label,
-#wpadminbar > #wp-toolbar span.noticon {
-  color: #fff;
-}
-#wp-admin-bar-wp-logo {
-  display: none;
-}
-#wpadminbar .ab-top-menu > li.hover > .ab-item,
-#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
-#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
-#wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
+.site-header {
   background: #c2405f;
-  color: #4b263b;
+}
+.site-header.fixed {
+  background: rgba(194, 64, 95, 0.9);
+  height: auto;
+}
+.site-header.fixed .navbar {
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  padding: 0;
+  min-height: 0;
+}
+.site-header.fixed .sf-menu > li > a {
+  padding: 1.8rem 0;
+}
+.site-header.fixed .sf-menu > li.current_page_item a {
+  color: #333;
 }

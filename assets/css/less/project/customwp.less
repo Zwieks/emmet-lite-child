@@ -1,16 +1,27 @@
-.header-wrap{
-	height:100%;
-	.container,
-	.row,
-	.col-xs-12,
-	.mainnav,
-	.menu-menu-1-container,
-	.menu{
-		height:100%;
-	}
+.sf-menu>li>a{
+	.transition();
+	color:@white;
+}
 
-	.menu{
-		.displayflex;
-		.align-items(center);
+.site-header{
+    background: @primColor;
+
+	&.fixed{
+		background: @primColorTrans;
+		height:auto;
+
+		.navbar{
+			.transition();
+			padding:0;
+			min-height: 0;
+		}
+
+		.sf-menu>li>a {
+			padding: @spacing*0.75 0;
+		}
+
+		.sf-menu>li.current_page_item a{
+			color:@black;
+		}
 	}
 }
