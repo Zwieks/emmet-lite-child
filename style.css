@@ -566,7 +566,7 @@ img:after {
   top: 50%;
   left: 50%;
   content: "✖ " attr(alt);
-  color: #999;
+  color: #e6e6e6;
 }
 img[src*='.svg'] {
   max-width: none;
@@ -1248,7 +1248,7 @@ html .cookie-explanation button.request-cookies,
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   height: 100%;
-  background: #999;
+  background: #e6e6e6;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
@@ -1536,7 +1536,7 @@ html:not(.touch-device) select[multiple]::-webkit-scrollbar {
 html:not(.touch-device) textarea::-webkit-scrollbar-thumb,
 html:not(.touch-device) select[multiple]::-webkit-scrollbar-thumb {
   -webkit-border-radius: 6px;
-  background: #999;
+  background: #e6e6e6;
   border: 3px solid #fff;
 }
 select[multiple] {
@@ -1556,19 +1556,19 @@ textarea {
   vertical-align: top;
 }
 ::-webkit-input-placeholder {
-  color: #999;
+  color: #e6e6e6;
 }
 ::-moz-placeholder {
-  color: #999;
+  color: #e6e6e6;
 }
 :-moz-placeholder {
-  color: #999;
+  color: #e6e6e6;
 }
 :-ms-input-placeholder {
-  color: #999;
+  color: #e6e6e6;
 }
 .placeholder {
-  color: #999 !important;
+  color: #e6e6e6 !important;
 }
 /* end default form elements */
 /* submit buttons */
@@ -1615,7 +1615,7 @@ button:focus,
 .form-description {
   display: block;
   clear: both;
-  color: #999;
+  color: #e6e6e6;
   margin: 0;
   font-size: 1.3125rem;
   font-style: italic;
@@ -1816,7 +1816,7 @@ html:not(.touch-device) [data-zoom] img {
 .sitemap .sitemap:before {
   position: absolute;
   content: '';
-  border-left: 1px dotted #999;
+  border-left: 1px dotted #e6e6e6;
   left: 1.2rem;
   top: 0;
   width: 1px;
@@ -1853,7 +1853,7 @@ html:not(.touch-device) [data-zoom] img {
   position: absolute;
   content: '';
   margin-right: 2.4rem;
-  border-top: 1px dotted #999;
+  border-top: 1px dotted #e6e6e6;
   width: 1.2rem;
   height: 1px;
   top: 2px;
@@ -2480,7 +2480,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #4b263b;
+  color: #27b399;
 }
 .btn,
 button,
@@ -2976,7 +2976,7 @@ html .cookie-explanation button.request-cookies:before,
 }
 .comp-quote p,
 .comp-alinea blockquote p {
-  color: #999;
+  color: #e6e6e6;
   font-size: 2.4rem;
   font-style: italic;
 }
@@ -3090,7 +3090,7 @@ html .cookie-explanation button.request-cookies:before,
   max-width: calc(320px - 4.8rem);
 }
 .search-result-url {
-  color: #999;
+  color: #e6e6e6;
   font-size: 1.3125rem;
   margin-bottom: 1.2rem;
 }
@@ -3140,7 +3140,7 @@ html div#cookie-bar a {
 }
 html div#cookie-bar a:hover,
 html div#cookie-bar a:focus {
-  color: #4b263b;
+  color: #27b399;
 }
 html div#cookie-bar span.cookie-buttons {
   padding: 1.2rem 0 0;
@@ -3179,7 +3179,7 @@ textarea {
   height: 12rem;
 }
 .form-tooltip[data-title] {
-  background: #999;
+  background: #e6e6e6;
   cursor: help;
   font-size: 1rem;
   color: #fff;
@@ -3254,7 +3254,7 @@ form ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: auto;
-  color: #999;
+  color: #e6e6e6;
   position: absolute;
   top: 0.6rem;
   left: 0;
@@ -3312,6 +3312,12 @@ form ol {
   transition: 0.15s ease-out;
   color: #fff;
 }
+.sf-menu > li.menu-item-object-custom.current-menu-item.current > a,
+.sf-menu > li.current_page_item > a,
+.sf-menu > li.current-menu-item > a,
+.sf-menu > li:hover > a {
+  color: #333;
+}
 .site-header {
   background: #c2405f;
 }
@@ -3330,6 +3336,32 @@ form ol {
 .site-header.fixed .sf-menu > li > a {
   padding: 1.8rem 0;
 }
-.site-header.fixed .sf-menu > li.current_page_item a {
+#buddypress div.item-list-tabs ul li a,
+#buddypress div.item-list-tabs ul li span {
+  padding: 1.2rem;
+  color: #fff;
+}
+#buddypress div.item-list-tabs ul li {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+#buddypress #item-nav {
+  background: #27b399;
+}
+#buddypress #item-body div.item-list-tabs ul li.selected a {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.4rem;
+}
+#buddypress #item-body #subnav a {
   color: #333;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+}
+#buddypress #item-body #subnav li {
+  border-right: 1px solid #e6e6e6;
+}
+#buddypress #item-body #subnav li:first-child {
+  border-left: 1px solid #e6e6e6;
+}
+#buddypress div.item-list-tabs#subnav {
+  margin: 0;
 }
