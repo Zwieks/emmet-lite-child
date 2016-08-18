@@ -1,0 +1,38 @@
+#wpadminbar{
+	background:@secColor;
+
+	a.ab-item{
+		color:@white;
+	}
+
+	#adminbarsearch{
+		&:before{
+			color:@white;
+		}
+	}
+}
+
+#wpadminbar #adminbarsearch:before,
+#wpadminbar .ab-icon:before,
+#wpadminbar .ab-item:before{
+	color:@white;
+}
+
+#wpadminbar .ab-empty-item,
+#wpadminbar a.ab-item,
+#wpadminbar>#wp-toolbar span.ab-label,
+#wpadminbar>#wp-toolbar span.noticon{
+	color:@white;
+}
+
+#wp-admin-bar-wp-logo{
+	display: none;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus{
+	background: @primColor;
+	color:@secColor;
+}
