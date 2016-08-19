@@ -2460,7 +2460,12 @@ legend,
   font-weight: bold;
   margin: 0 0 2.4rem;
   font-family: 'GeosansLight-NMS', sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 0.4rem;
+}
+p,
+.section-description {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
 }
 .panel-grid-cell .widget-title {
   color: #333;
@@ -2555,6 +2560,24 @@ html .cookie-explanation button.request-cookies:before,
   content: '›';
   float: right;
   margin-left: 0.6rem;
+}
+.site-main .button,
+.site-main button,
+.site-main input[type="button"],
+.site-main input[type="submit"],
+.site-main .added_to_cart,
+.site-footer .button,
+.site-footer button,
+.site-footer input[type="button"],
+.site-footer input[type="submit"],
+.site-footer .added_to_cart,
+.main-header .button,
+.main-header button,
+.main-header input[type="button"],
+.main-header input[type="submit"],
+.main-header .added_to_cart {
+  font-family: 'GeosansLight-NMS', sans-serif;
+  letter-spacing: 0.4rem;
 }
 [data-title]:after {
   -webkit-border-radius: 0.4rem;
@@ -3324,8 +3347,8 @@ form ol {
   top: 1.2rem;
   left: 1.2rem;
 }
-.big-section .section-title {
-  font-family: 'GeosansLight-NMS', sans-serif;
+#big-section .section-description {
+  letter-spacing: 0.2rem;
 }
 .container {
   position: relative;
