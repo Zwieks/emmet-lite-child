@@ -3425,7 +3425,7 @@ form ol {
 }
 body.login {
   color: green;
-  background-image: url("images/loginBg.jpg") !important;
+  background-image: url('images/loginBg.jpg') !important;
   background-size: cover!important;
 }
 .login form {
