@@ -10,6 +10,13 @@ Version: 1.4.3.1471523999
 Updated: 2016-08-18 12:39:59
 
 */
+/* CUSTOM FONTS */
+@font-face {
+  font-family: 'GeosansLight-NMS';
+  src: url('fonts/GeosansLight-NMS.eot?#iefix') format('embedded-opentype'), url('fonts/GeosansLight-NMS.woff') format('woff'), url('fonts/GeosansLight-NMS.ttf') format('truetype'), url('fonts/GeosansLight-NMS.svg#GeosansLight-NMS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 /* RESET (do not edit the files below) */
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -831,7 +838,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'GeosansLight-NMS', sans-serif;
   font-size: 1.5em;
   line-height: 1.5;
   color: #333;
@@ -840,10 +847,10 @@ body {
   -webkit-text-size-adjust: none;
 }
 .baseFont {
-  font-family: Arial, sans-serif;
+  font-family: 'GeosansLight-NMS', sans-serif;
 }
 .baseHeading {
-  font-family: 'Arial', Arial, sans-serif;
+  font-family: 'Arial', 'GeosansLight-NMS', sans-serif;
 }
 .iconFont {
   font-family: 'fontawesome';
@@ -862,7 +869,7 @@ legend,
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-  font-family: 'Arial', Arial, sans-serif;
+  font-family: 'Arial', 'GeosansLight-NMS', sans-serif;
   line-height: 1.2;
   text-rendering: optimizelegibility;
   margin: 0;
@@ -1427,7 +1434,7 @@ button {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  font-family: Arial, sans-serif;
+  font-family: 'GeosansLight-NMS', sans-serif;
   font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2048,7 +2055,7 @@ html {
   margin-top: 0 !important;
 }
 html div#cookie-bar {
-  font: 1.5rem Arial, sans-serif;
+  font: 1.5rem 'GeosansLight-NMS', sans-serif;
   line-height: 1.5;
   color: #333;
   top: auto !important;
@@ -2095,7 +2102,7 @@ html .cookie-explanation-container {
 }
 html .cookie-explanation {
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: 'GeosansLight-NMS', sans-serif;
   font-style: normal;
   font-size: 1.5rem;
   text-align: left;
@@ -2452,6 +2459,8 @@ legend,
   hyphens: auto;
   font-weight: bold;
   margin: 0 0 2.4rem;
+  font-family: 'GeosansLight-NMS', sans-serif;
+  letter-spacing: 4px;
 }
 .panel-grid-cell .widget-title {
   color: #333;
@@ -2693,7 +2702,7 @@ html .cookie-explanation button.request-cookies:before,
   color: #333 !important;
 }
 #masthead #mainnav ul li a {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 .page-footer .inner {
   display: -webkit-box;
@@ -3305,12 +3314,34 @@ form ol {
   color: #fff;
 }
 /* PLACE YOUR OWN CSS STYLING DOWN HERE WITH @IMPORTS */
+.header-logo img {
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  max-width: 18rem;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+}
+.big-section .section-title {
+  font-family: 'GeosansLight-NMS', sans-serif;
+}
+.container {
+  position: relative;
+}
+.sf-menu > li {
+  margin-left: 3.6rem;
+}
 .sf-menu > li > a {
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
   -o-transition: 0.15s ease-out;
   transition: 0.15s ease-out;
   color: #fff;
+  font-family: 'GeosansLight-NMS', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
 }
 .sf-menu > li.menu-item-object-custom.current-menu-item.current > a,
 .sf-menu > li.current_page_item > a,
@@ -3335,6 +3366,10 @@ form ol {
 }
 .site-header.fixed .sf-menu > li > a {
   padding: 1.8rem 0;
+}
+.site-header.fixed .header-logo img {
+  max-width: 11rem;
+  top: 0.6rem;
 }
 #buddypress div.item-list-tabs ul li a,
 #buddypress div.item-list-tabs ul li span {
