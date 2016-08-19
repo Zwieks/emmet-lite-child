@@ -1,0 +1,54 @@
+body.login{
+	color:green;
+	background-image: url("images/loginBg.jpg")!important;
+	background-size:cover!important;
+}
+
+.login form{
+	background: rgba(255,255,255,0.4);
+}
+
+.login label{
+	font-size:@smallHeadingSize!important;
+}
+
+.login form .input,
+.login form .forgetmenot label{
+	font-size:@smallerHeadingSize!important;
+}
+
+.login form .forgetmenot label{
+	font-weight:bold;
+}
+
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large{
+	background: @secColor;
+	border:none;
+	padding: @spacing/2 @spacing*1.25;
+	line-height: 0;
+}
+
+.login .button-primary{
+	border: none!important;
+}
+
+.wp-core-ui .button-primary{
+	.box-shadow(none);
+	font-family:@baseFont;
+	letter-spacing: @letterspacingSmall;
+	text-shadow:none;
+	font-size:@smallHeadingSize;
+}
+
+.login #login_error{
+	border-left-color:@secColor;
+	color:@errorColor;
+	font-size:@smallerHeadingSize;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover{
+	color:@secColor;
+}

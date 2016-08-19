@@ -3423,3 +3423,50 @@ form ol {
 #buddypress div.item-list-tabs#subnav {
   margin: 0;
 }
+body.login {
+  color: green;
+  background-image: url("images/loginBg.jpg") !important;
+  background-size: cover!important;
+}
+.login form {
+  background: rgba(255, 255, 255, 0.4);
+}
+.login label {
+  font-size: 1.8rem !important;
+}
+.login form .input,
+.login form .forgetmenot label {
+  font-size: 1.6rem !important;
+}
+.login form .forgetmenot label {
+  font-weight: bold;
+}
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+  background: #27b399;
+  border: none;
+  padding: 1.2rem 3rem;
+  line-height: 0;
+}
+.login .button-primary {
+  border: none!important;
+}
+.wp-core-ui .button-primary {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: 'GeosansLight-NMS', sans-serif;
+  letter-spacing: 0.1rem;
+  text-shadow: none;
+  font-size: 1.8rem;
+}
+.login #login_error {
+  border-left-color: #27b399;
+  color: #f00;
+  font-size: 1.6rem;
+}
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover {
+  color: #27b399;
+}
