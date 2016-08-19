@@ -16,4 +16,6 @@ function my_custom_login() {
   echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/style.css" />';
 }
 add_action('login_head', 'my_custom_login');
+
+add_filter( 'breadcrumb_trail', '__return_false' );
 // END ENQUEUE PARENT ACTION

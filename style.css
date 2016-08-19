@@ -3470,3 +3470,63 @@ body.login {
 .login h1 a:hover {
   color: #27b399;
 }
+body.register .breadcrumb-wrapper {
+  display: none;
+}
+body.register .wrapper {
+  background: transparent!important;
+}
+body.register.pages-background {
+  background-image: url('images/loginBg.jpg') !important;
+}
+body.register #main .main-container {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+  padding: 2.4rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+body.register #buddypress .standard-form #basic-details-section input[type=password],
+body.register #buddypress .standard-form #blog-details-section input#signup_blog_url,
+body.register #buddypress .standard-form#signup_form div div.error {
+  width: 100%;
+}
+body.register #buddypress #commentform input[type=text],
+body.register #buddypress #commentform textarea,
+body.register #buddypress .form-allowed-tags,
+body.register #buddypress .standard-form#signup_form input[type=text],
+body.register #buddypress .standard-form#signup_form textarea {
+  width: 100%;
+}
+body.register #buddypress .dir-search input[type=search],
+body.register #buddypress .dir-search input[type=text],
+body.register #buddypress .groups-members-search input[type=search],
+body.register #buddypress .groups-members-search input[type=text],
+body.register #buddypress .standard-form input[type=color],
+body.register #buddypress .standard-form input[type=date],
+body.register #buddypress .standard-form input[type=datetime-local],
+body.register #buddypress .standard-form input[type=datetime],
+body.register #buddypress .standard-form input[type=email],
+body.register #buddypress .standard-form input[type=month],
+body.register #buddypress .standard-form input[type=number],
+body.register #buddypress .standard-form input[type=password],
+body.register #buddypress .standard-form input[type=range],
+body.register #buddypress .standard-form input[type=search],
+body.register #buddypress .standard-form input[type=tel],
+body.register #buddypress .standard-form input[type=text],
+body.register #buddypress .standard-form input[type=time],
+body.register #buddypress .standard-form input[type=url],
+body.register #buddypress .standard-form input[type=week],
+body.register #buddypress .standard-form select,
+body.register #buddypress .standard-form textarea {
+  width: 100%;
+}
+body.register #buddypress .standard-form div.submit input {
+  background: #27b399;
+  color: #fff;
+  border: none;
+}

@@ -1,0 +1,64 @@
+body.register {
+	.breadcrumb-wrapper{
+		display: none;
+	}
+
+	.wrapper {
+		background: transparent!important;
+	}
+
+	&.pages-background{
+		background-image: url('images/loginBg.jpg') !important;
+	}
+
+	#main .main-container{
+		.box-shadow(0 1px 3px rgba(0,0,0,.13));
+		.border-radius(5px);
+		background: @white;
+		padding:@spacing;
+		background: rgba(255,255,255,0.8);
+	}
+
+	#buddypress .standard-form #basic-details-section input[type=password],
+	#buddypress .standard-form #blog-details-section input#signup_blog_url,
+	#buddypress .standard-form#signup_form div div.error{
+		width: 100%;
+	}
+
+	#buddypress #commentform input[type=text],
+	#buddypress #commentform textarea, #buddypress .form-allowed-tags,
+	#buddypress .standard-form#signup_form input[type=text],
+	#buddypress .standard-form#signup_form textarea{
+		width: 100%;
+	}
+
+	#buddypress .dir-search input[type=search],
+	#buddypress .dir-search input[type=text],
+	#buddypress .groups-members-search input[type=search],
+	#buddypress .groups-members-search input[type=text],
+	#buddypress .standard-form input[type=color],
+	#buddypress .standard-form input[type=date],
+	#buddypress .standard-form input[type=datetime-local],
+	#buddypress .standard-form input[type=datetime],
+	#buddypress .standard-form input[type=email],
+	#buddypress .standard-form input[type=month],
+	#buddypress .standard-form input[type=number],
+	#buddypress .standard-form input[type=password],
+	#buddypress .standard-form input[type=range],
+	#buddypress .standard-form input[type=search],
+	#buddypress .standard-form input[type=tel],
+	#buddypress .standard-form input[type=text],
+	#buddypress .standard-form input[type=time],
+	#buddypress .standard-form input[type=url],
+	#buddypress .standard-form input[type=week],
+	#buddypress .standard-form select,
+	#buddypress .standard-form textarea{
+		width: 100%;
+	}
+
+	#buddypress .standard-form div.submit input{
+		background:@secColor;
+		color:@white;
+		border: none;
+	}
+}
