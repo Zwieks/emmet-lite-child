@@ -558,7 +558,7 @@ img:before {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #ddd;
+  background: #d9dde0;
   text-align: center;
 }
 img:after {
@@ -1443,7 +1443,7 @@ button {
   min-height: 3.6rem;
   padding: 0 1.2rem;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #d9dde0;
   display: block;
 }
 [type=text].disabled,
@@ -1500,7 +1500,7 @@ button:focus {
   height: 3.6rem;
   width: 100%;
   position: relative;
-  border: solid 1px #ddd;
+  border: solid 1px #d9dde0;
   background: #fff;
   overflow: hidden;
   z-index: 1;
@@ -1663,26 +1663,26 @@ button:focus,
 }
 .webapp-table,
 .comp-alinea table {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d9dde0;
   border-collapse: collapse;
 }
 .webapp-table th,
 .comp-alinea table th {
-  background: #f7f7f7;
+  background: #f5f6f7;
   text-align: left;
 }
 .webapp-table td,
 .comp-alinea table td,
 .webapp-table th,
 .comp-alinea table th {
-  border-right: 1px solid #ddd;
-  border-top: 1px solid #ddd;
+  border-right: 1px solid #d9dde0;
+  border-top: 1px solid #d9dde0;
 }
 .webapp-table td:first-child,
 .comp-alinea table td:first-child,
 .webapp-table th:first-child,
 .comp-alinea table th:first-child {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #d9dde0;
 }
 .comp-alinea table[border="0"] {
   border: 0 !important;
@@ -2191,7 +2191,7 @@ html .cookie-explanation button.request-cookies {
   height: 1.2rem;
   line-height: 1.2rem;
   left: 0;
-  border: 1px solid #b7b7b7;
+  border: 1px solid #afb7be;
 }
 .form-input-radio label:not(.multiple-title):before,
 .form-input-multipleselect-checkboxes label:not(.multiple-title):before,
@@ -2244,7 +2244,7 @@ html .cookie-explanation button.request-cookies {
   box-shadow: none;
   width: 100%;
   background: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #d9dde0;
   padding: 0.6rem;
   margin: 0;
 }
@@ -2482,7 +2482,7 @@ h3 {
   }
 }
 hr {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d9dde0;
 }
 a {
   -webkit-transition: 0.15s ease-out;
@@ -2778,15 +2778,15 @@ html .cookie-explanation button.request-cookies:before,
   content: '\25B2';
 }
 .crumb-active {
-  background: #f7f7f7;
+  background: #f5f6f7;
 }
 .subcrumb {
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
-  -webkit-box-shadow: 0 0 0 1px #ddd;
-  -moz-box-shadow: 0 0 0 1px #ddd;
-  box-shadow: 0 0 0 1px #ddd;
+  -webkit-box-shadow: 0 0 0 1px #d9dde0;
+  -moz-box-shadow: 0 0 0 1px #d9dde0;
+  box-shadow: 0 0 0 1px #d9dde0;
   background: #fff;
   min-width: 240px;
 }
@@ -2796,10 +2796,10 @@ html .cookie-explanation button.request-cookies:before,
 }
 .subcrumb a:hover,
 .subcrumb a:focus {
-  background: rgba(221, 221, 221, 0.5);
+  background: rgba(217, 221, 224, 0.5);
 }
 .subcrumb li:not(:first-child) a {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #d9dde0;
 }
 .crumb-arrow:before {
   content: attr(data-arrow);
@@ -2824,7 +2824,7 @@ html .cookie-explanation button.request-cookies:before,
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   }
   .open-breadcrumb .breadcrumb-toggler {
-    background: #ddd;
+    background: #d9dde0;
   }
   .open-breadcrumb .breadcrumb-toggler:before {
     content: '\25B2';
@@ -2834,10 +2834,10 @@ html .cookie-explanation button.request-cookies:before,
   }
   .crumb-level1:not(:nth-last-child(2)) a:hover,
   .crumb-level1:not(:nth-last-child(2)) a:focus {
-    background: rgba(221, 221, 221, 0.5);
+    background: rgba(217, 221, 224, 0.5);
   }
   .crumb-level1:not(:nth-last-child(2)):not(:first-child) a {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #d9dde0;
   }
   .crumb-level1:nth-last-child(2) {
     top: -3rem;
@@ -2853,7 +2853,7 @@ html .cookie-explanation button.request-cookies:before,
     border-radius: 50%;
     width: 2.4rem;
     min-height: 2.4rem;
-    border: 1px solid #ddd;
+    border: 1px solid #d9dde0;
     background: #fff;
     color: #333;
   }
@@ -2862,12 +2862,15 @@ html .cookie-explanation button.request-cookies:before,
   }
   .breadcrumb-toggler:hover,
   .breadcrumb-toggler:focus {
-    background: #ddd;
-    border-color: #ddd;
+    background: #d9dde0;
+    border-color: #d9dde0;
   }
   .no-crumb-button .crumb-level1:nth-last-child(2) {
     left: 0;
   }
+}
+.breadcrumb-wrapper {
+  display: none;
 }
 .nav-trigger {
   display: none;
@@ -3151,7 +3154,7 @@ html div#cookie-bar {
   padding: 2.4rem 2.4rem 0;
   bottom: 1.2rem;
   right: 1.2rem;
-  background: #f7f7f7;
+  background: #f5f6f7;
 }
 @media screen and (max-width: 480px) {
   html div#cookie-bar {
@@ -3188,8 +3191,8 @@ html .cookie-explanation-container {
   -webkit-border-radius: 0.4rem;
   -moz-border-radius: 0.4rem;
   border-radius: 0.4rem;
-  border: 1px dotted #ddd;
-  background: #f7f7f7;
+  border: 1px dotted #d9dde0;
+  background: #f5f6f7;
 }
 html .cookie-explanation {
   padding: 1.2rem 2.4rem 1.2rem 4.8rem;
@@ -3529,4 +3532,273 @@ body.register #buddypress .standard-form div.submit input {
   background: #27b399;
   color: #fff;
   border: none;
+}
+body.bbpress.custom-background.pages-background {
+  background: url('images/loginBg.jpg') no-repeat center center fixed !important;
+  background-size: cover!important;
+}
+body.bbpress .breadcrumb-wrapper,
+body.bbpress div.bbp-breadcrumb {
+  display: none;
+}
+body.bbpress .wrapper {
+  background: transparent!important;
+}
+body.bbpress #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar,
+body.bbpress #bbpress-forums div.odd,
+body.bbpress #bbpress-forums ul.odd {
+  background: #fff !important;
+}
+body.bbpress .bbp-pagination {
+  background: #fff;
+}
+body.bbpress .bbp-meta {
+  font-size: 1.1rem;
+}
+body.bbpress #bbpress-forums {
+  background: #fff !important;
+  padding: 2.4rem;
+  margin: 2.4rem 0 4.8rem;
+}
+body.bbpress #bbpress-forums div.bbp-search-form {
+  margin: 0;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form select {
+  font-size: 1.3rem;
+}
+body.bbpress .select-wrapper {
+  position: relative;
+}
+body.bbpress .select-wrapper:before {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  font-size: 1.3rem;
+  right: 2.4rem;
+}
+body.bbpress .site-main .form-control,
+body.bbpress .site-main input[type="text"],
+body.bbpress .site-main input[type="url"],
+body.bbpress .site-main input[type="email"],
+body.bbpress .site-main input[type="number"],
+body.bbpress .site-main input[type="password"],
+body.bbpress .site-main input[type="search"],
+body.bbpress .site-main input[type="tel"],
+body.bbpress .site-main select,
+body.bbpress .site-footer .form-control,
+body.bbpress .site-footer input[type="text"],
+body.bbpress .site-footer input[type="url"],
+body.bbpress .site-footer input[type="email"],
+body.bbpress .site-footer input[type="number"],
+body.bbpress .site-footer input[type="password"],
+body.bbpress .site-footer input[type="search"],
+body.bbpress .site-footer input[type="tel"],
+body.bbpress .site-footer select,
+body.bbpress .main-header .form-control,
+body.bbpress .main-header input[type="text"],
+body.bbpress .main-header input[type="url"],
+body.bbpress .main-header input[type="email"],
+body.bbpress .main-header input[type="number"],
+body.bbpress .main-header input[type="password"],
+body.bbpress .main-header input[type="search"],
+body.bbpress .main-header input[type="tel"],
+body.bbpress .main-header select {
+  height: 3.6rem;
+}
+body.bbpress .site-main .button,
+body.bbpress .site-main button,
+body.bbpress .site-main input[type="button"],
+body.bbpress .site-main input[type="submit"],
+body.bbpress .site-main .added_to_cart,
+body.bbpress .site-footer .button,
+body.bbpress .site-footer button,
+body.bbpress .site-footer input[type="button"],
+body.bbpress .site-footer input[type="submit"],
+body.bbpress .site-footer .added_to_cart,
+body.bbpress .main-header .button,
+body.bbpress .main-header button,
+body.bbpress .main-header input[type="button"],
+body.bbpress .main-header input[type="submit"],
+body.bbpress .main-header .added_to_cart {
+  padding: 0 2.4rem;
+  height: 3.6rem;
+  min-height: 2.4rem;
+  font-size: 1.1rem;
+}
+body.bbpress #bbpress-forums #bbp-search-form #bbp_search {
+  margin-right: 0;
+}
+body.bbpress [type=radio],
+body.bbpress [type=checkbox] {
+  display: inline-block;
+}
+body.bbpress #bbpress-forums div.bbp-template-notice img.avatar {
+  display: none;
+}
+body.bbpress #bbpress-forums div.bbp-topic-tags a {
+  background: #27b399;
+  color: #fff;
+  padding: 0.2em;
+  font-size: 1.1rem;
+  margin-right: 0.2rem;
+  display: inline-block;
+}
+body.bbpress #bbpress-forums div.bbp-topic-tags a:last-child {
+  margin-right: 0;
+}
+body.bbpress #bbpress-forums div.bbp-topic-tags p {
+  font-size: 1.3rem;
+}
+body.bbpress div.bbp-template-notice a {
+  color: #27b399;
+}
+body.bbpress .bbp-pagination-links {
+  list-style: none;
+  font-size: 12px;
+  display: inline;
+}
+body.bbpress .bbp-pagination-links a,
+body.bbpress .bbp-pagination-links a.next,
+body.bbpress .bbp-pagination-links a.prev {
+  display: block;
+  float: left;
+  padding: 4px 9px;
+  margin-right: 7px;
+  border: 1px solid #efefef;
+}
+body.bbpress .bbp-pagination-links span.current {
+  display: block;
+  float: left;
+  padding: 4px 9px;
+  margin-right: 7px;
+  border: 1px solid #efefef;
+  background-color: #f5f5f5;
+}
+body.bbpress .bbp-pagination-links span.dots {
+  display: block;
+  float: left;
+  padding: 4px 4px;
+  margin-right: 7px;
+}
+body.bbpress .bbp-pagination-count {
+  display: none;
+}
+body.bbpress #bbpress-forums .bbp-pagination {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+body.bbpress #bbpress-forums li.bbp-header a,
+body.bbpress #bbpress-forums li.bbp-footer a {
+  color: #27b399;
+  background: #fff;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.3rem;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form p,
+body.bbpress #bbpress-forums fieldset.bbp-form textarea,
+body.bbpress #bbpress-forums fieldset.bbp-form select,
+body.bbpress #bbpress-forums fieldset.bbp-form input {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form input {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form label {
+  margin-bottom: 0;
+  margin-left: 0.6rem;
+}
+body.bbpress span.bbp-admin-links a,
+body.bbpress span.bbp-admin-links,
+body.bbpress .bbp-forum-header a.bbp-forum-permalink,
+body.bbpress .bbp-topic-header a.bbp-topic-permalink,
+body.bbpress .bbp-reply-header a.bbp-reply-permalink {
+  color: #333;
+}
+body.bbpress div.bbp-submit-wrapper {
+  margin-top: 0;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form legend {
+  font-size: 2rem;
+  border: 0;
+  padding: 0 1.2rem;
+  background: #fff;
+  margin-bottom: 0;
+  line-height: 2.4rem;
+}
+body.bbpress li.bbp-header div.bbp-reply-content span#subscription-toggle {
+  color: transparent;
+}
+body.bbpress #bbpress-forums ul.bbp-replies div.bbp-reply-header {
+  margin-top: 1.2rem;
+  border: 1px solid #d9dde0;
+  border-bottom: none;
+}
+body.bbpress #bbpress-forums ul.bbp-replies div.bbp-reply-header,
+body.bbpress #bbpress-forums ul.bbp-replies div.bbp-reply-header + div.reply {
+  border: 1px solid #d9dde0;
+}
+body.bbpress #bbpress-forums ul.bbp-replies div.bbp-reply-header + div.reply {
+  margin-top: 0;
+  border-top: none;
+}
+body.bbpress #bbpress-forums div.topic-tag-main {
+  background: #27b399 !important;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  border: 1px solid #d9dde0;
+  border-top: none;
+}
+body.bbpress #bbpress-forums div.topic-tag-main a.bbp-author-name {
+  color: #fff;
+}
+body.bbpress #bbpress-forums div.topic-tag-main .bbp-reply-ip span {
+  color: #fff;
+}
+body.bbpress #bbpress-forums ul.bbp-lead-topic,
+body.bbpress #bbpress-forums ul.bbp-topics,
+body.bbpress #bbpress-forums ul.bbp-forums,
+body.bbpress #bbpress-forums ul.bbp-replies,
+body.bbpress #bbpress-forums ul.bbp-search-results {
+  border: none;
+  border-left: 1px solid #e6e6e6 !important;
+}
+body.bbpress #bbpress-forums ul.bbp-replies {
+  border-left: 0!important;
+}
+body.bbpress #bbpress-forums span.bbp-admin-links a,
+body.bbpress #bbpress-forums span.bbp-admin-links,
+body.bbpress #bbpress-forums .bbp-forum-header a.bbp-forum-permalink,
+body.bbpress #bbpress-forums .bbp-topic-header a.bbp-topic-permalink,
+body.bbpress #bbpress-forums .bbp-reply-header a.bbp-reply-permalink {
+  padding: 0 0.3rem;
+}
+body.bbpress #bbpress-forums span.bbp-admin-links a:hover,
+body.bbpress #bbpress-forums span.bbp-admin-links a:focus {
+  text-decoration: underline;
+}
+body.bbpress #bbpress-forums #bbp_topic_subscription {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form label[for=bbp_topic_subscription] {
+  margin-bottom: 0;
+}
+body.bbpress div.bbp-submit-wrapper button.button {
+  margin-bottom: 0!important;
+}
+body.bbpress #bbpress-forums div.bbp-the-content-wrapper {
+  margin-bottom: 2.4rem;
+}
+body.bbpress #subscription-toggle a {
+  color: #fff;
+  background: #27b399;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.3rem;
 }
