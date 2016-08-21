@@ -3426,6 +3426,17 @@ form ol {
 #buddypress div.item-list-tabs#subnav {
   margin: 0;
 }
+body.bp-user {
+  background: #e6e6e6 !important;
+}
+body.bp-user #main {
+  background: #e6e6e6 !important;
+}
+body.bp-user .main-container {
+  background: #fff;
+  padding: 2.4rem;
+  margin-bottom: 6rem;
+}
 body.login {
   color: green;
   background-image: url('images/loginBg.jpg') !important;
@@ -3537,6 +3548,13 @@ body.bbpress.custom-background.pages-background {
   background: url('images/loginBg.jpg') no-repeat center center fixed !important;
   background-size: cover!important;
 }
+body.bbpress.bp-user.pages-background {
+  background-image: none;
+  background: #e6e6e6 !important;
+}
+body.bbpress.bp-user.pages-background #main {
+  background: #e6e6e6 !important;
+}
 body.bbpress .breadcrumb-wrapper,
 body.bbpress div.bbp-breadcrumb {
   display: none;
@@ -3631,6 +3649,7 @@ body.bbpress .main-header .added_to_cart {
 }
 body.bbpress #bbpress-forums #bbp-search-form #bbp_search {
   margin-right: 0;
+  font-size: 1.3rem;
 }
 body.bbpress [type=radio],
 body.bbpress [type=checkbox] {
@@ -3764,13 +3783,29 @@ body.bbpress #bbpress-forums div.topic-tag-main .bbp-reply-ip span {
 body.bbpress #bbpress-forums ul.bbp-lead-topic,
 body.bbpress #bbpress-forums ul.bbp-topics,
 body.bbpress #bbpress-forums ul.bbp-forums,
-body.bbpress #bbpress-forums ul.bbp-replies,
-body.bbpress #bbpress-forums ul.bbp-search-results {
+body.bbpress #bbpress-forums ul.bbp-repliess {
   border: none;
   border-left: 1px solid #e6e6e6 !important;
 }
+body.bbpress #bbpress-forums ul.bbp-search-results {
+  border: none!important;
+}
 body.bbpress #bbpress-forums ul.bbp-replies {
   border-left: 0!important;
+  border-right: 0!important;
+}
+body.bbpress #bbp-search-results .even {
+  border-left: 1px solid #e6e6e6 !important;
+  border-right: 1px solid #e6e6e6 !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+}
+body.bbpress #bbp-search-results div.bbp-forum-header,
+body.bbpress #bbp-search-results div.bbp-topic-header,
+body.bbpress #bbp-search-results div.bbp-reply-header {
+  border-top: none;
+  border-left: 1px solid #e6e6e6 !important;
+  border-right: 1px solid #e6e6e6 !important;
+  border-bottom: 1px solid #e6e6e6 !important;
 }
 body.bbpress #bbpress-forums span.bbp-admin-links a,
 body.bbpress #bbpress-forums span.bbp-admin-links,
@@ -3801,4 +3836,7 @@ body.bbpress #subscription-toggle a {
   background: #27b399;
   padding: 0.2rem 0.6rem;
   font-size: 1.3rem;
+}
+body.bbpress #main-menu #menu-main-menu li.nav1-forums a {
+  color: blue;
 }
