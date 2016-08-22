@@ -3472,7 +3472,7 @@ form ol {
   top: 50%;
   font-family: 'nms';
   content: 'b';
-  right: 1.2rem;
+  right: 0.6rem;
 }
 body.buddypress.members {
   background: url('images/loginBg.jpg') no-repeat center center fixed !important;
