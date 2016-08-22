@@ -1,4 +1,22 @@
+body.buddypress{
+	&.members{
+		background: url(@backgroundimage) no-repeat center center fixed!important;
+		background-size:cover!important;
+
+		.wrapper{
+			background: none;
+		}
+
+		.main-container{
+			background: @white;
+			padding: @spacing;
+		}
+	}
+}
+
+
 #buddypress {
+
 	.comment-reply-link,
 	.generic-button a,
 	a.button,
@@ -61,6 +79,21 @@
 
 	#item-nav{
 		background: @secColor;
+	}
+
+	div.dir-search{
+		width: 100%;
+		margin:0;
+
+		#search-members-form{
+			padding:0;
+		}
+	}
+
+	#members-all{
+		a{
+			color:@secColor;
+		}
 	}
 
 	.activity-list .activity-content .activity-header,
@@ -311,10 +344,107 @@
 	}
 }
 
+body.members{
+	.main-container{
+		background: transparent!important;
+	}
+
+	#members-directory-form{
+		padding-top: 0;
+	}
+
+	form,
+	.profile,
+	#members-list,
+	.messages,
+	#message-thread,
+	#account-delete-form,
+	#notifications-bulk-management{
+		background: transparent!important;
+	}
+
+	#members-order-select{
+		.displayflex;
+		.align-items(center);
+		.justify-content(flex-end);
+
+		font-family: @baseFont;
+		margin: 0 @spacing/2 !important;
+		padding: @spacing/2 0 @spacing/2 !important;
+		border: none !important;
+
+		label {
+			margin: 0;
+			font-size: 1.3rem;
+			padding-right: @spacing/4;
+		}
+
+		select,
+		input {
+			font-size: 1.3rem;
+		}
+
+		input[type=submit] {
+			font-size: @smallerFontSize;
+		}
+
+		form {
+			padding: 0 !important;
+		}
+
+		.select-wrapper {
+			width: auto;
+		}
+
+		div.item-list-tabs,
+		#subnav{
+			background: @white;
+		}
+	}
+
+	#members-all,
+	#members-personal,
+	#subnav{
+		background: @white!important;
+	}
+
+	#subnav{
+		.displayflex;
+		.justify-content(flex-end);
+	}
+
+	.main-container{
+		margin-bottom:@spacing*2.5;
+		padding:0!important;
+	}
+
+	.item-list-tabs{
+		a{
+			color:@textColor!important;
+		}
+
+		li{
+			border-bottom:1px solid @grey;
+		}
+	}
+
+	.select-wrapper{
+		position: relative;
+		&:before{
+			.centerY;
+			right:@spacing/2;
+			font-size:1.3rem;
+		}
+	}
+
+	#members-order-by{
+		height:auto;
+	}
+}
+
 body.bp-user{
 	margin-bottom: 0;
 	background: @white;
-	margin-bottom: 0;
 
 	#buddypress #item-header{
 		background: @white;
@@ -328,19 +458,6 @@ body.bp-user{
 	#subnav{
 		background: @white!important;
 	}
-
-
-	//.item-list-tabs{
-	//	.filter{
-	//		.displayflex;
-	//		.align-items(center);
-	//
-	//		font-family: @baseFont;
-	//		margin: 0 @spacing/2!important;
-	//		padding: @spacing/2 0 @spacing/2!important;
-	//		border: none!important;
-	//	}
-	//}
 
 	.item-list-tabs{
 		#search-message-form,

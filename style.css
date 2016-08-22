@@ -3429,6 +3429,17 @@ form ol {
 .main-header textarea {
   font-family: 'GeosansLight-NMS', sans-serif;
 }
+body.buddypress.members {
+  background: url('images/loginBg.jpg') no-repeat center center fixed !important;
+  background-size: cover!important;
+}
+body.buddypress.members .wrapper {
+  background: none;
+}
+body.buddypress.members .main-container {
+  background: #fff;
+  padding: 2.4rem;
+}
 #buddypress .comment-reply-link,
 #buddypress .generic-button a,
 #buddypress a.button,
@@ -3478,6 +3489,16 @@ form ol {
 }
 #buddypress #item-nav {
   background: #27b399;
+}
+#buddypress div.dir-search {
+  width: 100%;
+  margin: 0;
+}
+#buddypress div.dir-search #search-members-form {
+  padding: 0;
+}
+#buddypress #members-all a {
+  color: #27b399;
 }
 #buddypress .activity-list .activity-content .activity-header img,
 #buddypress .activity-list .activity-content .comment-header img {
@@ -3680,9 +3701,112 @@ form ol {
   line-height: 1.1rem;
   font-size: 1.1rem;
 }
-body.bp-user {
+body.members .main-container {
+  background: transparent!important;
+}
+body.members #members-directory-form {
+  padding-top: 0;
+}
+body.members form,
+body.members .profile,
+body.members #members-list,
+body.members .messages,
+body.members #message-thread,
+body.members #account-delete-form,
+body.members #notifications-bulk-management {
+  background: transparent!important;
+}
+body.members #members-order-select {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  font-family: 'GeosansLight-NMS', sans-serif;
+  margin: 0 1.2rem !important;
+  padding: 1.2rem 0 1.2rem !important;
+  border: none !important;
+}
+body.members #members-order-select label {
+  margin: 0;
+  font-size: 1.3rem;
+  padding-right: 0.6rem;
+}
+body.members #members-order-select select,
+body.members #members-order-select input {
+  font-size: 1.3rem;
+}
+body.members #members-order-select input[type=submit] {
+  font-size: 1.1rem;
+}
+body.members #members-order-select form {
+  padding: 0 !important;
+}
+body.members #members-order-select .select-wrapper {
+  width: auto;
+}
+body.members #members-order-select div.item-list-tabs,
+body.members #members-order-select #subnav {
   background: #fff;
+}
+body.members #members-all,
+body.members #members-personal,
+body.members #subnav {
+  background: #fff !important;
+}
+body.members #subnav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+body.members .main-container {
+  margin-bottom: 6rem;
+  padding: 0!important;
+}
+body.members .item-list-tabs a {
+  color: #767676 !important;
+}
+body.members .item-list-tabs li {
+  border-bottom: 1px solid #e6e6e6;
+}
+body.members .select-wrapper {
+  position: relative;
+}
+body.members .select-wrapper:before {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  font-size: 1.3rem;
+}
+body.members #members-order-by {
+  height: auto;
+}
+body.bp-user {
   margin-bottom: 0;
+  background: #fff;
 }
 body.bp-user #buddypress #item-header {
   background: #fff;
@@ -3937,11 +4061,11 @@ body.bbpress.custom-background.pages-background {
   background: url('images/loginBg.jpg') no-repeat center center fixed !important;
   background-size: cover!important;
 }
-body.bbpress.bp-user.pages-background {
+body.bbpress.bp-user {
   background-image: none;
   background: #e6e6e6 !important;
 }
-body.bbpress.bp-user.pages-background #main {
+body.bbpress.bp-user #main {
   background: #e6e6e6 !important;
 }
 body.bbpress .breadcrumb-wrapper,
