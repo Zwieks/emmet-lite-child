@@ -15,7 +15,7 @@
 }
 
 .sf-menu>li{
-	margin-left:3.6rem;
+	margin-left:@spacing*1.5;
 }
 
 .sf-menu>li>a{
@@ -24,6 +24,10 @@
 	font-family:@baseFont;
 	font-size:@smallerHeadingSize;
 	letter-spacing: 4px;
+
+	@media @bp-DesktopL{
+		font-size: 1.3rem;
+	}
 }
 
 .sf-menu>li.menu-item-object-custom.current-menu-item.current>a,
@@ -88,4 +92,43 @@
 .main-header select, 
 .main-header textarea{
 	font-family: @baseFont;
+}
+
+#footer{
+	.site-logo{
+		display: none;
+	}
+
+	#bbp-search-form{
+		input{
+			width: 100%;
+		}
+	}
+
+	#bbp_search{
+		margin-bottom: @spacing/2;
+	}
+
+	.contact-info{
+		display: none;
+	}
+
+	.row{
+		.displayflex;
+	}
+
+	.bp-menu{
+		position: relative;
+		border-bottom:1px solid rgba(255,255,255,0.1);
+		padding-left: @spacing/4;
+		padding-bottom: @spacing/2;
+		padding-right: @spacing/2;
+
+		&:before{
+			.centerY;
+			font-family: @iconFont;
+			content:'b';
+			right:@spacing/2;
+		}
+	}
 }

@@ -853,7 +853,7 @@ body {
   font-family: 'Arial', 'GeosansLight-NMS', sans-serif;
 }
 .iconFont {
-  font-family: 'fontawesome';
+  font-family: 'nms';
 }
 .smallFontSize {
   font-size: 1.3125rem;
@@ -1388,15 +1388,15 @@ html .cookie-explanation button.request-cookies,
 /* Specific styling for nav from the top */
 /* Specific styling for nav as overlay */
 @font-face {
-  font-family: 'fontawesome';
-  src: url('/public/fonts/fontawesome.eot');
-  src: url('/public/fonts/fontawesome.eot?#iefix') format('embedded-opentype'), url('/public/fonts/fontawesome.woff') format('woff'), url('/public/fonts/fontawesome.ttf') format('truetype'), url('/public/fonts/fontawesome.svg#fontawesome') format('svg');
+  font-family: 'nms';
+  src: url('fonts/nms.eot');
+  src: url('fonts/nms.eot?#iefix') format('embedded-opentype'), url('fonts/nms.woff') format('woff'), url('fonts/nms.ttf') format('truetype'), url('fonts/nms.svg#nms') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 [data-icon]:before {
   content: attr(data-icon);
-  font-family: 'fontawesome' !important;
+  font-family: 'nms' !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -3369,6 +3369,11 @@ form ol {
   font-size: 1.6rem;
   letter-spacing: 4px;
 }
+@media screen and (max-width: 1150px) {
+  .sf-menu > li > a {
+    font-size: 1.3rem;
+  }
+}
 .sf-menu > li.menu-item-object-custom.current-menu-item.current > a,
 .sf-menu > li.current_page_item > a,
 .sf-menu > li.current-menu-item > a,
@@ -3429,6 +3434,46 @@ form ol {
 .main-header textarea {
   font-family: 'GeosansLight-NMS', sans-serif;
 }
+#footer .site-logo {
+  display: none;
+}
+#footer #bbp-search-form input {
+  width: 100%;
+}
+#footer #bbp_search {
+  margin-bottom: 1.2rem;
+}
+#footer .contact-info {
+  display: none;
+}
+#footer .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+}
+#footer .bp-menu {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 0.6rem;
+  padding-bottom: 1.2rem;
+  padding-right: 1.2rem;
+}
+#footer .bp-menu:before {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  font-family: 'nms';
+  content: 'b';
+  right: 1.2rem;
+}
 body.buddypress.members {
   background: url('images/loginBg.jpg') no-repeat center center fixed !important;
   background-size: cover!important;
@@ -3453,6 +3498,8 @@ body.buddypress.members .main-container {
   color: #fff;
   font-size: 1.1rem;
   padding: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 #buddypress a.avatar-crop-submit {
   line-height: 2.8rem;
@@ -3955,6 +4002,9 @@ body.login {
   background-image: url('images/loginBg.jpg') !important;
   background-size: cover!important;
 }
+.login #login a {
+  font-size: 1.3rem;
+}
 .login form {
   background: rgba(255, 255, 255, 0.4);
 }
@@ -4057,6 +4107,12 @@ body.register #buddypress .standard-form div.submit input {
   color: #fff;
   border: none;
 }
+body.register #register-page form {
+  background: none;
+}
+body.bbpress:not(.bp-user) #main-menu a[href*=forums] {
+  color: #333;
+}
 body.bbpress.custom-background.pages-background {
   background: url('images/loginBg.jpg') no-repeat center center fixed !important;
   background-size: cover!important;
@@ -4074,6 +4130,9 @@ body.bbpress div.bbp-breadcrumb {
 }
 body.bbpress .wrapper {
   background: transparent!important;
+}
+body.bbpress #bbp_search_submit {
+  margin-bottom: 2.4rem;
 }
 body.bbpress #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar,
 body.bbpress #bbpress-forums div.odd,

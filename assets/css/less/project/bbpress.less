@@ -1,5 +1,13 @@
 body.bbpress{
 
+	&:not(.bp-user){
+		#main-menu{
+			a[href*=forums]{
+				color:@black;
+			} 
+		}
+	}
+
 	&.custom-background.pages-background{
 		background: url(@backgroundimage) no-repeat center center fixed!important;
 		background-size:cover!important;
@@ -21,6 +29,10 @@ body.bbpress{
 
 	.wrapper {
 		background: transparent!important;
+	}
+
+	#bbp_search_submit{
+		margin-bottom: @spacing;
 	}
 
 	#bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar, 
