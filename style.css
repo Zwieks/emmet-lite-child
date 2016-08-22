@@ -605,7 +605,7 @@ iframe {
 [href^="tel:"] {
   cursor: default;
   text-decoration: none;
-  color: #333;
+  color: #767676;
 }
 [href^="tel:"]:hover,
 [href^="tel:"]:focus {
@@ -841,7 +841,7 @@ body {
   font-family: 'GeosansLight-NMS', sans-serif;
   font-size: 1.5em;
   line-height: 1.5;
-  color: #333;
+  color: #767676;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
@@ -1481,7 +1481,7 @@ textarea:focus,
 select:focus,
 button:focus {
   outline: 0;
-  border-color: #333;
+  border-color: #767676;
 }
 [disabled] {
   cursor: not-allowed;
@@ -1531,7 +1531,7 @@ button:focus {
   display: none;
 }
 .style-select.focus {
-  border-color: #333;
+  border-color: #767676;
 }
 html:not(.touch-device) textarea::-webkit-scrollbar,
 html:not(.touch-device) select[multiple]::-webkit-scrollbar {
@@ -1962,7 +1962,7 @@ html:not(.touch-device) [data-zoom] img {
 }
 .search-result a {
   display: block;
-  color: #333;
+  color: #767676;
 }
 .search-result-url {
   display: -webkit-box;
@@ -2057,7 +2057,7 @@ html {
 html div#cookie-bar {
   font: 1.5rem 'GeosansLight-NMS', sans-serif;
   line-height: 1.5;
-  color: #333;
+  color: #767676;
   top: auto !important;
   left: auto !important;
   border: 0;
@@ -2089,7 +2089,7 @@ html div#cookie-bar span.cookie-buttons .allow-cookies {
   margin-right: 2.4rem;
 }
 html div#cookie-bar span.cookie-buttons .disallow-cookies {
-  color: #333;
+  color: #767676;
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 2.4rem;
@@ -2101,7 +2101,7 @@ html .cookie-explanation-container {
   margin: 0 auto 2.4rem;
 }
 html .cookie-explanation {
-  color: #333;
+  color: #767676;
   font-family: 'GeosansLight-NMS', sans-serif;
   font-style: normal;
   font-size: 1.5rem;
@@ -2133,7 +2133,7 @@ html .cookie-explanation button.request-cookies {
 }
 [type=radio]:checked + label:before,
 [type=checkbox]:checked + label:before {
-  border-color: #333;
+  border-color: #767676;
 }
 [type=radio]:checked + label:after,
 [type=checkbox]:checked + label:after {
@@ -2142,7 +2142,7 @@ html .cookie-explanation button.request-cookies {
   -ms-transform: translateY(-50%) scale(1) !important;
   -o-transform: translateY(-50%) scale(1) !important;
   transform: translateY(-50%) scale(1) !important;
-  border-color: #333;
+  border-color: #767676;
 }
 .form-input-radio label,
 .form-input-multipleselect-checkboxes label,
@@ -2207,7 +2207,7 @@ html .cookie-explanation button.request-cookies {
   -o-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
   border: 0;
-  background: #333;
+  background: #767676;
 }
 .form-input-radio label:not(.multiple-title):hover:before,
 .form-input-multipleselect-checkboxes label:not(.multiple-title):hover:before,
@@ -2215,7 +2215,7 @@ html .cookie-explanation button.request-cookies {
 .form-input-radio label:not(.multiple-title):focus:before,
 .form-input-multipleselect-checkboxes label:not(.multiple-title):focus:before,
 .form-input-checkbox label:not(.multiple-title):focus:before {
-  border-color: #333;
+  border-color: #767676;
 }
 .form-input-radio label:not(.multiple-title):before,
 .form-input-radio label:not(.multiple-title):after {
@@ -2468,7 +2468,7 @@ p,
   font-weight: bold;
 }
 .panel-grid-cell .widget-title {
-  color: #333;
+  color: #767676;
   font-size: 3.2rem;
 }
 .roll-icon-box .content h3,
@@ -2763,12 +2763,12 @@ html .cookie-explanation button.request-cookies:before,
   margin: 2.4rem 0;
 }
 .page-breadcrumb a {
-  color: #333;
+  color: #767676;
   line-height: 2.4rem;
   display: inline-block;
 }
 .crumb-level1 {
-  color: #333;
+  color: #767676;
 }
 .crumb-level1:before {
   content: '›';
@@ -2855,7 +2855,7 @@ html .cookie-explanation button.request-cookies:before,
     min-height: 2.4rem;
     border: 1px solid #d9dde0;
     background: #fff;
-    color: #333;
+    color: #767676;
   }
   .breadcrumb-toggler:before {
     content: attr(data-arrow);
@@ -3211,7 +3211,7 @@ select[multiple] {
   max-height: 12rem;
 }
 textarea {
-  height: 12rem;
+  height: 12rem !important;
 }
 .form-tooltip[data-title] {
   background: #e6e6e6;
@@ -3336,7 +3336,7 @@ form ol {
   transform: translateY(-100%);
   font-size: 1.3125rem;
   top: 0;
-  background: #333;
+  background: #767676;
   color: #fff;
 }
 /* PLACE YOUR OWN CSS STYLING DOWN HERE WITH @IMPORTS */
@@ -3429,6 +3429,45 @@ form ol {
 .main-header textarea {
   font-family: 'GeosansLight-NMS', sans-serif;
 }
+#buddypress .comment-reply-link,
+#buddypress .generic-button a,
+#buddypress a.button,
+#buddypress button,
+#buddypress input[type=button],
+#buddypress input[type=reset],
+#buddypress input[type=submit],
+#buddypress ul.button-nav li a,
+#buddypress a.bp-title-button {
+  background: #27b399;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1.2rem;
+}
+#buddypress a.avatar-crop-submit {
+  line-height: 2.8rem;
+}
+#buddypress form li {
+  width: 100%;
+}
+#buddypress form p {
+  margin-bottom: 1.2rem;
+}
+#buddypress form label {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+#buddypress form img {
+  display: inline-block;
+}
+#buddypress input[type=submit] {
+  margin-bottom: 0;
+  background: #27b399;
+  color: #fff;
+  font-size: 1.1rem;
+}
+#buddypress div.activity-comments form div.ac-reply-content a {
+  line-height: 4.8rem;
+}
 #buddypress div.item-list-tabs ul li a,
 #buddypress div.item-list-tabs ul li span {
   padding: 1.2rem;
@@ -3440,13 +3479,17 @@ form ol {
 #buddypress #item-nav {
   background: #27b399;
 }
+#buddypress .activity-list .activity-content .activity-header img,
+#buddypress .activity-list .activity-content .comment-header img {
+  display: inline-block;
+}
 #buddypress #item-body div.item-list-tabs ul li.selected a {
   padding: 0.6rem 1.2rem;
   font-size: 1.4rem;
 }
 #buddypress #item-body #subnav a {
-  color: #333;
-  font-size: 1.2rem;
+  color: #767676;
+  font-size: 1.3rem;
   padding: 0.6rem 1.2rem;
 }
 #buddypress #item-body #subnav li {
@@ -3458,75 +3501,15 @@ form ol {
 #buddypress div.item-list-tabs#subnav {
   margin: 0 0 1.2rem 0;
 }
-body.bp-user {
-  background: #fff;
-  margin-bottom: 0;
-}
-body.bp-user #buddypress #item-header {
-  background: #fff;
-  padding: 2.4rem 2.4rem 0;
-}
-body.bp-user #main {
-  background: #e6e6e6 !important;
-}
-body.bp-user #subnav {
-  background: #fff !important;
-}
-body.bp-user .profile .bp-widget {
-  background: white;
-  padding: 0.6rem 2.4rem 2.4rem;
-  margin-top: 2.4rem;
-}
-body.bp-user #activity-filter-select {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  font-family: 'GeosansLight-NMS', sans-serif;
-  margin: 0 1.2rem !important;
-  padding: 1.2rem 0 1.2rem !important;
-  border: none!important;
-}
-body.bp-user #activity-filter-select label {
-  margin: 0;
-  font-size: 1.3rem;
-  padding-right: 0.6rem;
-}
-body.bp-user #activity-filter-select .select-wrapper {
-  width: auto;
-}
-body.bp-user #activity-filter-by {
-  font-size: 1.3rem;
-}
-body.bp-user #buddypress form#whats-new-form p.activity-greeting {
-  line-height: 2.4rem;
-}
-body.bp-user .main-container {
-  margin-top: 2.4rem;
-  margin-bottom: 6rem;
-}
-body.bp-user #activity-stream .bbp_reply_create,
-body.bp-user #activity-stream .activity-item {
-  background: #fff;
-  padding: 1.2rem;
-  margin-bottom: 1.2rem;
-}
-body.bp-user #activity-stream .bbp_reply_create:last-child,
-body.bp-user #activity-stream .activity-item:last-child {
-  margin-bottom: 0;
-}
 #buddypress #item-body form#whats-new-form {
   padding: 1.2rem;
   background: #27b399;
   color: #fff;
   margin-bottom: 2.4rem;
+}
+#buddypress #item-body form#whats-new-form input {
+  background-color: #fff;
+  color: #27b399;
 }
 #buddypress div.activity-meta a {
   font-size: 1rem;
@@ -3537,6 +3520,11 @@ body.bp-user #activity-stream .activity-item:last-child {
 #buddypress div.activity-meta a:hover,
 #buddypress div.activity-meta a:focus {
   border: none;
+}
+#buddypress div.activity-meta a:hover span,
+#buddypress div.activity-meta a:focus span {
+  color: #767676;
+  background-color: transparent;
 }
 #buddypress div.activity-meta a span {
   background: transparent;
@@ -3564,6 +3552,279 @@ body.bp-user #activity-stream .activity-item:last-child {
   background: #27b399;
   color: #fff;
   padding: 0.3rem 0.6rem;
+}
+#buddypress form,
+#buddypress .profile,
+#buddypress #members-list,
+#buddypress .messages,
+#buddypress #pag-top,
+#buddypress #pag-bottom,
+#buddypress #message-thread,
+#buddypress #account-delete-form,
+#buddypress #notifications-bulk-management {
+  background: #fff;
+  padding: 2.4rem;
+}
+#buddypress #account-delete-form {
+  padding-top: 1.2rem;
+}
+#buddypress #notifications-bulk-management {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#buddypress #members-list {
+  background: transparent;
+  padding: 0;
+}
+#buddypress #members-list li {
+  background: #fff;
+  padding: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+#buddypress #members-list li.is-online a {
+  color: #27b399;
+}
+#buddypress #members-list li:last-child {
+  margin-bottom: 0;
+}
+#buddypress #members-list li div.action {
+  right: 2.4rem;
+}
+#buddypress #members-list li div.action a {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #27b399;
+  color: #fff;
+  border: none;
+}
+#buddypress form {
+  padding-left: 0;
+  padding-right: 0;
+}
+#buddypress #settings-form {
+  padding: 2.4rem;
+}
+#buddypress #settings-form label {
+  margin-top: 0;
+}
+#buddypress .messages {
+  padding: 0 2.4rem;
+}
+#buddypress .messages .button {
+  background: #27b399;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+}
+#buddypress .messages .button:hover,
+#buddypress .messages .button:focus {
+  border: none;
+}
+#buddypress .notifications-options-nav,
+#buddypress .messages-options-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+#buddypress #messages-bulk-management,
+#buddypress #send_message_form {
+  padding: 2.4rem;
+}
+#buddypress #profile-edit-form {
+  padding: 0;
+}
+#buddypress .messages #messages-bulk-management {
+  padding: 2.4rem 0;
+}
+#buddypress .messages #messages-bulk-management #user-pag {
+  padding: 1.2rem 1.8rem;
+}
+#buddypress #avatar-upload-form {
+  display: none;
+}
+#buddypress #message-thread .message-box {
+  background: #e6e6e6;
+}
+#buddypress #message-thread form {
+  padding-left: 0;
+  padding-right: 0;
+}
+#buddypress #message-thread .button {
+  background: #27b399;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+}
+#buddypress #message-thread .message-action-unstar span.icon:before {
+  color: #27b399;
+}
+#buddypress div.profile h4 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+#buddypress div.profile .bp-widget {
+  margin-top: 0;
+}
+#buddypress div.profile input {
+  background-color: #27b399;
+  color: #fff;
+  line-height: 1.1rem;
+  font-size: 1.1rem;
+}
+body.bp-user {
+  background: #fff;
+  margin-bottom: 0;
+}
+body.bp-user #buddypress #item-header {
+  background: #fff;
+  padding: 2.4rem 2.4rem 0;
+}
+body.bp-user #main {
+  background: #e6e6e6 !important;
+}
+body.bp-user #subnav {
+  background: #fff !important;
+}
+body.bp-user .item-list-tabs #search-message-form,
+body.bp-user .item-list-tabs #activity-filter-select,
+body.bp-user .item-list-tabs #notifications-sort-order,
+body.bp-user .item-list-tabs li.filter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-family: 'GeosansLight-NMS', sans-serif;
+  margin: 0 1.2rem !important;
+  padding: 1.2rem 0 1.2rem !important;
+  border: none !important;
+}
+body.bp-user .item-list-tabs #search-message-form label,
+body.bp-user .item-list-tabs #activity-filter-select label,
+body.bp-user .item-list-tabs #notifications-sort-order label,
+body.bp-user .item-list-tabs li.filter label {
+  margin: 0;
+  font-size: 1.3rem;
+  padding-right: 0.6rem;
+}
+body.bp-user .item-list-tabs #search-message-form select,
+body.bp-user .item-list-tabs #activity-filter-select select,
+body.bp-user .item-list-tabs #notifications-sort-order select,
+body.bp-user .item-list-tabs li.filter select,
+body.bp-user .item-list-tabs #search-message-form input,
+body.bp-user .item-list-tabs #activity-filter-select input,
+body.bp-user .item-list-tabs #notifications-sort-order input,
+body.bp-user .item-list-tabs li.filter input {
+  font-size: 1.3rem;
+}
+body.bp-user .item-list-tabs #search-message-form input[type=submit],
+body.bp-user .item-list-tabs #activity-filter-select input[type=submit],
+body.bp-user .item-list-tabs #notifications-sort-order input[type=submit],
+body.bp-user .item-list-tabs li.filter input[type=submit] {
+  font-size: 1.1rem;
+}
+body.bp-user .item-list-tabs #search-message-form form,
+body.bp-user .item-list-tabs #activity-filter-select form,
+body.bp-user .item-list-tabs #notifications-sort-order form,
+body.bp-user .item-list-tabs li.filter form {
+  padding: 0 !important;
+}
+body.bp-user .item-list-tabs #search-message-form .select-wrapper,
+body.bp-user .item-list-tabs #activity-filter-select .select-wrapper,
+body.bp-user .item-list-tabs #notifications-sort-order .select-wrapper,
+body.bp-user .item-list-tabs li.filter .select-wrapper {
+  width: auto;
+}
+body.bp-user .item-list-tabs #notifications-sort-order {
+  padding: 0 !important;
+}
+body.bp-user .item-list-tabs #notifications-sort-order .select-wrapper {
+  margin-top: 0;
+}
+body.bp-user .item-list-tabs #members-order-select {
+  margin-top: 1.2rem !important;
+}
+body.bp-user table thead th {
+  background: #27b399;
+  color: #fff;
+}
+body.bp-user #members-order-select {
+  margin-top: 0!important;
+  padding-top: 0!important;
+  margin-bottom: 0!important;
+}
+body.bp-user #activity-filter-by {
+  font-size: 1.3rem;
+}
+body.bp-user #buddypress form#whats-new-form p.activity-greeting {
+  line-height: 2.4rem;
+}
+body.bp-user .main-container {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
+body.bp-user #activity-stream .bbp_reply_create,
+body.bp-user #activity-stream .activity-item {
+  background: #fff;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+body.bp-user #activity-stream .bbp_reply_create:last-child,
+body.bp-user #activity-stream .activity-item:last-child {
+  margin-bottom: 0;
+}
+body.bp-user ul.acfb-holder li:not(.friend-tab) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+body.bp-user ul.acfb-holder li.friend-tab {
+  width: auto!important;
+}
+body.bp-user ul.acfb-holder li.friend-tab:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body.bp-user ul.acfb-holder li.friend-tab img {
+  margin-top: -3px;
+}
+body.bp-user ul.acfb-holder li.friend-tab span.p {
+  color: #f00;
+}
+body.bp-user .ac_results img {
+  margin-top: -2px;
+  display: inline-block;
+}
+body.bp-user .ac_results strong {
+  line-height: 2.4rem;
 }
 body.login {
   color: green;
@@ -3895,17 +4156,20 @@ body.bbpress #bbpress-forums ul.bbp-replies div.bbp-reply-header + div.reply {
   margin-top: 0;
   border-top: none;
 }
-body.bbpress #bbpress-forums div.topic-tag-main {
+body.bbpress #bbpress-forums div.topic-tag-main,
+body.bbpress #bbpress-forums div.bbp-reply-position-1 {
   background: #27b399 !important;
   color: #fff;
   margin-bottom: 1.2rem;
   border: 1px solid #d9dde0;
   border-top: none;
 }
-body.bbpress #bbpress-forums div.topic-tag-main a.bbp-author-name {
+body.bbpress #bbpress-forums div.topic-tag-main a.bbp-author-name,
+body.bbpress #bbpress-forums div.bbp-reply-position-1 a.bbp-author-name {
   color: #fff;
 }
-body.bbpress #bbpress-forums div.topic-tag-main .bbp-reply-ip span {
+body.bbpress #bbpress-forums div.topic-tag-main .bbp-reply-ip span,
+body.bbpress #bbpress-forums div.bbp-reply-position-1 .bbp-reply-ip span {
   color: #fff;
 }
 body.bbpress #bbpress-forums ul.bbp-lead-topic,

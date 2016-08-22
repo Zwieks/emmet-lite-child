@@ -1,4 +1,54 @@
 #buddypress {
+	.comment-reply-link,
+	.generic-button a,
+	a.button,
+	button,
+	input[type=button],
+	input[type=reset],
+	input[type=submit],
+	ul.button-nav li a,
+	a.bp-title-button{
+		background: @secColor;
+		color:@white;
+		font-size:@smallerFontSize;
+		padding: @spacing/2;
+	}
+
+	a.avatar-crop-submit{
+		line-height: 2.8rem;
+	}
+
+	form{
+
+		li{
+			width: 100%;
+		}
+
+		p{
+			margin-bottom:@spacing/2;
+		}
+
+		label{
+			font-size:1.3rem;
+			margin-top: 0;
+		}
+
+		img{
+			display: inline-block;
+		}
+	}
+
+	input[type=submit]{
+		margin-bottom: 0;
+		background: @secColor;
+		color:@white;
+		font-size: @smallerFontSize;
+	}
+
+	div.activity-comments form div.ac-reply-content a{
+		line-height:@spacing*2;
+	}
+
 	div.item-list-tabs ul li a, 
 	div.item-list-tabs ul li span{
 		padding:@spacing/2;
@@ -12,7 +62,14 @@
 	#item-nav{
 		background: @secColor;
 	}
- 
+
+	.activity-list .activity-content .activity-header,
+	.activity-list .activity-content .comment-header{
+		img{
+			display: inline-block;
+		}
+	}
+
 	#item-body div.item-list-tabs ul li.selected a{
 		padding: @spacing/4 @spacing/2;
     	font-size: 1.4rem;
@@ -22,7 +79,7 @@
 		#subnav{
 			a{
 				color:@textColor;
-				font-size: 1.2rem;
+				font-size: 1.3rem;
 				padding: @spacing/4 @spacing/2;
 			}
 
@@ -38,6 +95,219 @@
 
 	div.item-list-tabs#subnav{
 		margin: 0 0 @spacing/2 0;
+	}
+
+	#item-body form#whats-new-form {
+		padding: @spacing/2;
+		background: @secColor;
+		color: @white;
+		margin-bottom: @spacing;
+
+		input {
+			background-color: @white;
+			color: @secColor;
+		}
+	}
+
+	div.activity-meta a{
+		font-size: 1rem;
+		background: @secColor;
+		color: @white;
+		border: none;
+
+		&:hover,
+		&:focus{
+			border:none;
+
+			span{
+				color:@textColor;
+				background-color: transparent;
+			}
+		}
+
+		span{
+			background: transparent;
+		}
+	}
+
+	.activity-list li.mini .activity-avatar img.avatar{
+		height: auto;
+		width: auto;
+		margin-left: auto;
+	}
+
+	.activity-list li.mini .activity-comments li{
+		background: #e6e6e6;
+		margin-top: @spacing/2;
+		padding: @spacing/2;
+	}
+
+	 div.activity-comments ul{
+		padding-left: 0;
+	 }
+
+	 .activity-list li.mini{
+		font-size: inherit;
+	 }
+
+	 .acomment-options a{
+		.border-radius(3px);
+		background: @secColor;
+		color:@white;
+		padding: @spacing/8 @spacing/4;
+	 }
+
+	form,
+	.profile,
+	#members-list,
+	.messages,
+	#pag-top,
+	#pag-bottom,
+	#message-thread,
+	#account-delete-form,
+	#notifications-bulk-management{
+		background: @white;
+		padding:@spacing;
+	}
+
+	#account-delete-form{
+		padding-top:@spacing/2;
+	}
+
+	#notifications-bulk-management{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	#members-list{
+		background: transparent;
+		padding:0;
+
+		li{
+			background: @white;
+			padding:@spacing;
+			margin-bottom:@spacing/2;
+
+			&.is-online{
+				a{
+					color:@secColor;
+				}
+			}
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			div.action{
+				right:@spacing;
+
+				a{
+					.border-radius(5px);
+					background: @secColor;
+					color:@white;
+					border:none;
+				}
+			}
+		}
+	}
+
+	form{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#settings-form{
+		padding:@spacing;
+
+		label{
+			margin-top: 0;
+		}
+	}
+
+	.messages{
+		padding:0 @spacing;
+		.button{
+			background:@secColor;
+			color:@white;
+			font-size:@smallerFontSize;
+			border:none;
+
+			&:hover,
+			&:focus{
+				border:none;
+			}
+		}
+	}
+
+	.notifications-options-nav,
+	.messages-options-nav{
+		.displayflex;
+		.justify-content(space-between);
+	}
+
+	#messages-bulk-management,
+	#send_message_form{
+		padding:@spacing;
+	}
+
+	#profile-edit-form{
+		padding:0;
+	}
+
+	.messages{
+		#messages-bulk-management{
+			padding:@spacing 0;
+
+			#user-pag{
+				padding:@spacing/2 1.8rem;
+			}
+		}
+	}
+
+	#avatar-upload-form{
+		display: none;
+	}
+
+	#message-thread{
+		.message-box{
+			background: @grey;
+		}
+
+		form{
+			padding-left:0;
+			padding-right:0;
+		}
+
+		.button{
+			background:@secColor;
+			color:@white;
+			font-size:@smallerFontSize;
+			border:none;
+		}
+
+		.message-action-unstar span.icon{
+			&:before{
+				color:@secColor;
+			}
+		}
+	}
+
+	div.profile{
+		h4{
+			margin-top:0;
+			margin-bottom:@spacing/2;
+		}
+
+		.bp-widget{
+			margin-top: 0;
+		}
+
+		input{
+			background-color: @secColor;
+			color:@white;
+			line-height:@smallerFontSize;
+			font-size:@smallerFontSize;
+		}
 	}
 }
 
@@ -59,31 +329,78 @@ body.bp-user{
 		background: @white!important;
 	}
 
-	.profile .bp-widget{
-		background: white;
-    	padding: @spacing/4 @spacing @spacing;
-    	margin-top: @spacing;
-	}
 
-	#activity-filter-select{
-		.displayflex;
-		.align-items(center);
+	//.item-list-tabs{
+	//	.filter{
+	//		.displayflex;
+	//		.align-items(center);
+	//
+	//		font-family: @baseFont;
+	//		margin: 0 @spacing/2!important;
+	//		padding: @spacing/2 0 @spacing/2!important;
+	//		border: none!important;
+	//	}
+	//}
 
-		font-family: @baseFont;
-		margin: 0 @spacing/2!important;
-    	padding: @spacing/2 0 @spacing/2!important;
-    	border: none!important;
+	.item-list-tabs{
+		#search-message-form,
+		#activity-filter-select,
+		#notifications-sort-order,
+		li.filter {
+			.displayflex;
+			.align-items(center);
 
-    	label{
-    		margin:0;
-    		font-size: 1.3rem;
-    		padding-right:@spacing/4;
-    	}
+			font-family: @baseFont;
+			margin: 0 @spacing/2 !important;
+			padding: @spacing/2 0 @spacing/2 !important;
+			border: none !important;
 
-    	.select-wrapper{
-			width: auto;
+			label {
+				margin: 0;
+				font-size: 1.3rem;
+				padding-right: @spacing/4;
+			}
+
+			select,
+			input {
+				font-size: 1.3rem;
+			}
+
+			input[type=submit] {
+				font-size: @smallerFontSize;
+			}
+
+			form {
+				padding: 0 !important;
+			}
+
+			.select-wrapper {
+				width: auto;
+			}
 		}
 
+		#notifications-sort-order{
+			padding: 0 !important;
+
+			.select-wrapper{
+				margin-top:0;
+			}
+		}
+
+		#members-order-select{
+			margin-top:@spacing/2!important;
+		}
+	}
+
+	table thead th{
+		background: @secColor;
+		color:@white;
+	}
+
+	#members-order-select{
+		margin-top: 0!important;
+		padding-top: 0!important;
+		margin-bottom: 0!important;;
 	}
 
 	#activity-filter-by{
@@ -111,54 +428,39 @@ body.bp-user{
 			}
 		}
 	}
-}
 
-#buddypress #item-body form#whats-new-form{
-	padding: @spacing/2;
-	background: @secColor;
-	color:@white;
-	margin-bottom: @spacing;	
-}
+	ul.acfb-holder{
 
-#buddypress div.activity-meta a{
-	font-size: 1rem;
-    background: @secColor;
-    color: @white;
-    border: none;
+		li{
+			&:not(.friend-tab){
+				.displayflex;
+				.flex-direction(column);
+				.align-items(flex-start);
+			}
+		}
 
-    &:hover,
-    &:focus{
-    	border:none;
-    }
+		li.friend-tab {
+			.cf;
+			width: auto!important;
 
-    span{
-    	background: transparent;
-    }
-}
+			img {
+				margin-top: -3px;
+			}
 
-#buddypress .activity-list li.mini .activity-avatar img.avatar{
-	height: auto;
-	width: auto;
-	margin-left: auto;
-}
+			span.p{
+				color:@errorColor;
+			}
+		}
+	}
 
-#buddypress .activity-list li.mini .activity-comments li{
-    background: #e6e6e6;
-    margin-top: @spacing/2;
-    padding: @spacing/2;
-}
+	.ac_results{
+		img{
+			margin-top: -2px;
+			display: inline-block;
+		}
 
-#buddypress div.activity-comments ul{
-	padding-left: 0;
-}
-
-#buddypress .activity-list li.mini{
-	font-size: inherit;
-}
-
-#buddypress .acomment-options a{
-	.border-radius(3px);
-	background: @secColor;
-	color:@white;
-	padding: @spacing/8 @spacing/4;
+		strong{
+			line-height: @spacing;
+		}
+	}
 }
