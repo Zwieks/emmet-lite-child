@@ -1,3 +1,13 @@
+#main{
+	.displayflex;
+	.flex-direction(column);
+	min-height: 100vh;
+}
+
+.container{
+	.flex(1);
+}
+
 body.buddypress{
 	&.members{
 		background: url(@backgroundimage) no-repeat center center fixed!important;
@@ -32,6 +42,35 @@ body.buddypress{
 		padding: @spacing/2;
 		text-transform: uppercase;
 		letter-spacing: 4px;
+	}
+
+	.editfield{
+		margin-bottom:@spacing;
+	}
+
+	.datebox{
+		legend{
+			letter-spacing: 0;
+			font-weight: 700;
+			border:none;
+			font-size:@mediumFontSize;
+		}
+	}
+
+	.field-visibility-settings-toggle{
+		font-style: normal;
+		font-weight: 300;
+		letter-spacing: 0;
+	}
+
+	.datebox-selects{
+		.displayflex;
+
+		.select-wrapper{
+			width: auto;
+			min-width: @spacing*3;
+			margin-right:@spacing/4;
+		}
 	}
 
 	a.avatar-crop-submit{
