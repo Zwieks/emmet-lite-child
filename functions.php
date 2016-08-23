@@ -5,7 +5,6 @@ if ( !defined( 'ABSPATH' ) ) exit;
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
 
-
 function login_error_override()
 {
   return 'Incorrect login details.';
