@@ -4488,6 +4488,9 @@ body.bbpress #main-menu #menu-main-menu li.nav1-forums a {
   color: #27b399;
 }
 .motopress-image-obj {
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 0;
 }
 .motopress-row {
