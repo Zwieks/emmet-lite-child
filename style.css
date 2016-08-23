@@ -3905,10 +3905,6 @@ body.bp-user {
   margin-bottom: 0;
   background: #fff;
 }
-body.bp-user #buddypress #item-header {
-  background: #fff;
-  padding: 2.4rem 2.4rem 0;
-}
 body.bp-user #main {
   background: #e6e6e6 !important;
 }
@@ -4464,4 +4460,25 @@ body.bbpress #subscription-toggle a {
 }
 body.bbpress #main-menu #menu-main-menu li.nav1-forums a {
   color: blue;
+}
+.motopress-quotes,
+.motopress-social-profile-obj,
+.emmet .motopress-tabs-obj.ui-tabs,
+.motopress-table-obj table,
+.motopress-image-ob,
+.motopress-grid-gallery-obj,
+.motopress-google-chart,
+.motopress-image-obj,
+.motopress-google-map-obj,
+.motopress-video-obj,
+.emmet .motopress-social-profile-obj,
+.emmet .motopress-share-buttons {
+  margin-bottom: 1.2rem;
+}
+.page-template-default #main {
+  background: #e6e6e6;
+}
+.page-template-default .main-container {
+  background: #fff;
+  padding: 2.4rem;
 }
