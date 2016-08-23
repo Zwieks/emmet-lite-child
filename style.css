@@ -4482,3 +4482,14 @@ body.bbpress #main-menu #menu-main-menu li.nav1-forums a {
   background: #fff;
   padding: 2.4rem;
 }
+.motopress-text-obj h2,
+.motopress-text-obj .panel-grid-cell .widget-title {
+  margin-bottom: 0.6rem;
+  color: #27b399;
+}
+.motopress-image-obj {
+  margin-bottom: 0;
+}
+.motopress-row {
+  margin-bottom: 1.2rem;
+}
