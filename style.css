@@ -4491,7 +4491,19 @@ body.bbpress #main-menu #menu-main-menu li.nav1-forums a {
   -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
   margin-bottom: 0;
+}
+.motopress-image-obj:hover,
+.motopress-image-obj:focus {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
 }
 .motopress-row {
   margin-bottom: 1.2rem;
