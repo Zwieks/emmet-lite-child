@@ -41,6 +41,10 @@ get_header();
                 <a class="source-link" href="<?php the_field('artikel_url') ?>" target="_blank"><?php the_field('artikel_bron') ?></a>
             </div>
         </div>
+
+        <div class="related-posts">
+            <?php  related_posts(); ?>
+        </div>   
     </div>
 
 <?php get_footer(); ?>
