@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all single posts
- *
+    Template Name Posts: Nieuws
  * @package WordPress
  * @subpackage Emmet
  * @since Emmet 1.0
@@ -21,12 +21,20 @@ get_header();
             </div>
         </div>
     </div>
+
     <div class="container main-container">
+        <date class="date"><?php the_date(); ?></date>
+
+        <?php
+            $bron_url = get_post_meta( get_the_ID(), 'URL bron artikel', true );
+            $bron_naam = get_post_meta( get_the_ID(), 'Naam bron artikel', true );
+        ?>
+
+        <span>Bron:</span><a href="<?php if ( ! empty( $bron_url ) ) {echo $bron_url;} ?>" target="_blank"><?php if ( ! empty( $bron_naam ) ) {echo $bron_naam;} ?></a>
         <div class="row clearfix">
             <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <?php while (have_posts()) : the_post(); ?>
                     <?php get_template_part('content', 'single'); ?>
-                    <?php comments_template(); ?>
                 <?php endwhile; ?>
             </div>
         </div>

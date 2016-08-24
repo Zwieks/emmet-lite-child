@@ -4527,3 +4527,20 @@ body.registration #main {
 .motopress-row {
   margin-bottom: 1.2rem;
 }
+body.post-template-single-nieuws-php .header-image.with-header-image {
+  background-size: cover;
+  background-position: center center;
+}
+body.post-template-single-nieuws-php strong {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+body.post-template-single-nieuws-php .date {
+  color: #27b399;
+}
+body.post-template-single-nieuws-php .post .entry-footer,
+body.post-template-single-nieuws-php .portfolio .entry-footer,
+body.post-template-single-nieuws-php .post .entry-thumbnail {
+  display: none;
+}
