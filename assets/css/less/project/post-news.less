@@ -14,9 +14,33 @@ body.post-template-single-nieuws-php{
 		color:@secColor;
 	}
 
+	.meta-data{
+		.displayflex;
+		.justify-content(space-between);
+	}
+
 	.post .entry-footer,
 	.portfolio .entry-footer,
 	.post .entry-thumbnail{
 		display: none;
+	}
+
+	.post-source{
+		text-align: right;
+		width: 100%;
+		color:@secColor;
+
+		.source-link{
+			color:@black;
+			font-weight: bold;
+		}
+	}
+
+	img.alignleft{
+		margin:@spacing/2 @spacing @spacing/2 0;
+	}
+
+	article.post .entry-content{
+		margin-bottom: 0;
 	}
 }

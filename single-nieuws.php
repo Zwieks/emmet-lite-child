@@ -23,14 +23,15 @@ get_header();
     </div>
 
     <div class="container main-container">
-        <date class="date"><?php the_date(); ?></date>
+        <div class="meta-data">
+            <date class="date"><?php the_date(); ?></date>
 
-        <?php
-            $bron_url = get_post_meta( get_the_ID(), 'URL bron artikel', true );
-            $bron_naam = get_post_meta( get_the_ID(), 'Naam bron artikel', true );
-        ?>
+            <?php
+                $bron_url = get_post_meta( get_the_ID(), 'URL bron artikel', true );
+                $bron_naam = get_post_meta( get_the_ID(), 'Naam bron artikel', true );
+            ?>
+        </div>
 
-        <span>Bron:</span><a href="<?php if ( ! empty( $bron_url ) ) {echo $bron_url;} ?>" target="_blank"><?php if ( ! empty( $bron_naam ) ) {echo $bron_naam;} ?></a>
         <div class="row clearfix">
             <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <?php while (have_posts()) : the_post(); ?>
@@ -38,5 +39,14 @@ get_header();
                 <?php endwhile; ?>
             </div>
         </div>
+
+        <div class="meta-data">
+            <div class="post-source">
+                <span>Bron:</span>
+                <a class="source-link" href="<?php if ( ! empty( $bron_url ) ) {echo $bron_url;} ?>" target="_blank"><?php if ( ! empty( $bron_naam ) ) {echo $bron_naam;} ?></a>
+            </div>
+        </div>
     </div>
+
+
 <?php get_footer(); ?>
