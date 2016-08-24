@@ -25,11 +25,6 @@ get_header();
     <div class="container main-container">
         <div class="meta-data">
             <date class="date"><?php the_date(); ?></date>
-
-            <?php
-                $bron_url = get_post_meta( get_the_ID(), 'URL bron artikel', true );
-                $bron_naam = get_post_meta( get_the_ID(), 'Naam bron artikel', true );
-            ?>
         </div>
 
         <div class="row clearfix">
@@ -43,10 +38,9 @@ get_header();
         <div class="meta-data">
             <div class="post-source">
                 <span>Bron:</span>
-                <a class="source-link" href="<?php if ( ! empty( $bron_url ) ) {echo $bron_url;} ?>" target="_blank"><?php if ( ! empty( $bron_naam ) ) {echo $bron_naam;} ?></a>
+                <a class="source-link" href="<?php the_field('artikel_url') ?>" target="_blank"><?php the_field('artikel_bron') ?></a>
             </div>
         </div>
     </div>
-
 
 <?php get_footer(); ?>
