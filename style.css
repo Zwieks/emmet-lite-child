@@ -3340,6 +3340,10 @@ form ol {
   color: #fff;
 }
 /* PLACE YOUR OWN CSS STYLING DOWN HERE WITH @IMPORTS */
+/* Menu items */
+body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
+  color: #333;
+}
 .header-logo img {
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
@@ -4654,4 +4658,64 @@ body.post-template-single-nieuws-php img.alignnone {
 }
 body.post-template-single-nieuws-php article.post .entry-content {
   margin-bottom: 0;
+}
+.related-posts {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.related-posts .yarpp-related {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  width: 70%;
+  margin-top: 4.8rem;
+}
+.related-posts .yarpp-related h3 {
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 640px) {
+  .related-posts .yarpp-related {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .related-posts .yarpp-related {
+    width: 90%;
+  }
+}
+.related-posts .date {
+  padding-right: 2.4rem;
+}
+.related-posts a {
+  color: #767676;
+  letter-spacing: 0.1rem;
+}
+.related-posts .more-news-item {
+  padding: 1.2rem 0;
+  border-top: 1px solid #e6e6e6;
+}
+.related-posts .more-news-item:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }

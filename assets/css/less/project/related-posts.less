@@ -1,0 +1,43 @@
+.related-posts{
+	.displayflex;
+	.justify-content(center);
+
+	.yarpp-related{
+		.displayflex;
+		.flex-direction(column);
+		.justify-content(center);
+		width: 70%;
+		margin-top:@spacing*2;
+
+		h3{
+			text-transform: uppercase;
+			margin-bottom:@spacing/2;
+		}
+
+		@media @bp-MobileL{
+			width: 90%;
+		}
+
+		@media @bp-MobileM{
+			width: 90%;
+		}
+	}
+
+	.date{
+		padding-right:@spacing;
+	}
+
+	a{
+		color:@textColor;
+		letter-spacing: 0.1rem;
+	}
+
+	.more-news-item{
+		padding:@spacing/2 0;
+		border-top:1px solid @grey;
+
+		&:last-child{
+			border-bottom:1px solid @grey;
+		}
+	}
+}
