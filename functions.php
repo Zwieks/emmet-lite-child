@@ -17,4 +17,14 @@ function my_custom_login() {
 add_action('login_head', 'my_custom_login');
 
 add_filter( 'breadcrumb_trail', '__return_false' );
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+  global $post;
+  if ( isset( $post ) ) {
+    $classes[] = $post->post_type . '-' . $post->post_name;
+  }
+  return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
 // END ENQUEUE PARENT ACTION

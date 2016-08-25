@@ -1,0 +1,32 @@
+.page-games-en-gadgets{
+	.main-container{
+		background: transparent!important;
+	}
+
+	.motopress-image-obj{
+		.box-shadow(none);
+
+		&:hover,
+		&:focus{
+			.scale(1);
+		}
+	}
+
+	.motopress-row{
+		.displayflex()!important;
+		margin-bottom: @spacing;
+		background: @white;
+		padding:@spacing @spacing 0;
+	}
+
+	.motopress-clmn{
+		.displayflex()!important;
+		.flex-direction(column);
+		.flex-grow(1);
+
+		.motopress-row{
+			.displayflex;
+			.flex-grow(1);
+		}
+	}
+}

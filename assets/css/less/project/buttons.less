@@ -33,6 +33,15 @@ a {
     }
 }
 
+//Motopress btn
+.motopress-btn{
+    &:extend(.btn all);
+
+    border: none!important;
+    background: @secColor!important;
+    color: @white!important;
+}
+
 // Bigger button
 .call-to-action {
     &:extend(.btn all);
@@ -61,6 +70,7 @@ a {
 }
 
 .site-main .button,
+.motopress-btn,
 .site-main button,
 .site-main input[type="button"],
 .site-main input[type="submit"],

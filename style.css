@@ -932,6 +932,7 @@ button,
 html div#cookie-bar span.cookie-buttons .allow-cookies,
 html .cookie-explanation button.request-cookies,
 [type=file]::-webkit-file-upload-button,
+.motopress-btn,
 .call-to-action,
 .roll-button {
   display: inline-block;
@@ -2502,6 +2503,7 @@ button,
 html div#cookie-bar span.cookie-buttons .allow-cookies,
 html .cookie-explanation button.request-cookies,
 [type=file]::-webkit-file-upload-button,
+.motopress-btn,
 .call-to-action,
 .roll-button {
   -webkit-transition: 0.15s ease-out;
@@ -2529,6 +2531,8 @@ html .cookie-explanation button.request-cookies:hover,
 html .cookie-explanation button.request-cookies:focus,
 [type=file]:hover::-webkit-file-upload-button,
 [type=file]:focus::-webkit-file-upload-button,
+.motopress-btn:hover,
+.motopress-btn:focus,
 .call-to-action:hover,
 .call-to-action:focus,
 .roll-button:hover,
@@ -2541,10 +2545,16 @@ button:before,
 [type=submit]:before,
 html div#cookie-bar span.cookie-buttons .allow-cookies:before,
 html .cookie-explanation button.request-cookies:before,
+.motopress-btn:before,
 .call-to-action:before,
 .roll-button:before {
   float: right;
   margin-left: 0.6rem;
+}
+.motopress-btn {
+  border: none!important;
+  background: #27b399 !important;
+  color: #fff !important;
 }
 .call-to-action {
   padding: 1.2rem 2.4rem;
@@ -2562,6 +2572,7 @@ html .cookie-explanation button.request-cookies:before,
   margin-left: 0.6rem;
 }
 .site-main .button,
+.motopress-btn,
 .site-main button,
 .site-main input[type="button"],
 .site-main input[type="submit"],
@@ -4755,4 +4766,62 @@ body.post-template-single-nieuws-php article.post .entry-content {
 }
 .apss-social-share .apss-single-icon {
   margin-right: 1.2rem;
+}
+.page-games-en-gadgets .main-container {
+  background: transparent!important;
+}
+.page-games-en-gadgets .motopress-image-obj {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.page-games-en-gadgets .motopress-image-obj:hover,
+.page-games-en-gadgets .motopress-image-obj:focus {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.page-games-en-gadgets .motopress-row {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: -ms-flex !important;
+  display: flex !important;
+  margin-bottom: 2.4rem;
+  background: #fff;
+  padding: 2.4rem 2.4rem 0;
+}
+.page-games-en-gadgets .motopress-clmn {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -webkit-flex !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: -ms-flex !important;
+  display: flex !important;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+.page-games-en-gadgets .motopress-clmn .motopress-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
 }
