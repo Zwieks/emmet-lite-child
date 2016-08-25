@@ -3341,6 +3341,19 @@ form ol {
 }
 /* PLACE YOUR OWN CSS STYLING DOWN HERE WITH @IMPORTS */
 /* Menu items */
+body.post-template-single-nieuws-php article.post .entry-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
   color: #333;
 }
@@ -4638,7 +4651,7 @@ body.post-template-single-nieuws-php .post .entry-thumbnail {
 }
 body.post-template-single-nieuws-php .post-source {
   text-align: right;
-  width: 100%;
+  width: auto;
   color: #27b399;
 }
 body.post-template-single-nieuws-php .post-source .source-link {
@@ -4658,6 +4671,7 @@ body.post-template-single-nieuws-php img.alignnone {
 }
 body.post-template-single-nieuws-php article.post .entry-content {
   margin-bottom: 0;
+  margin-top: 1.2rem;
 }
 .related-posts {
   display: -webkit-box;
@@ -4689,7 +4703,7 @@ body.post-template-single-nieuws-php article.post .entry-content {
   -ms-justify-content: center;
   justify-content: center;
   width: 70%;
-  margin-top: 4.8rem;
+  margin-top: 3.6rem;
 }
 .related-posts .yarpp-related h3 {
   text-transform: uppercase;
@@ -4718,4 +4732,23 @@ body.post-template-single-nieuws-php article.post .entry-content {
 }
 .related-posts .more-news-item:last-child {
   border-bottom: 1px solid #e6e6e6;
+}
+.apss-social-share {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+.apss-social-share .apss-share-text {
+  padding-right: 2.4rem;
+}
+.apss-social-share .apss-single-icon {
+  margin-right: 1.2rem;
 }

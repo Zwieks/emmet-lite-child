@@ -25,6 +25,11 @@ get_header();
     <div class="container main-container">
         <div class="meta-data">
             <date class="date"><?php the_date(); ?></date>
+
+            <div class="post-source">
+                <span>Bron:</span>
+                <a class="source-link" href="<?php the_field('artikel_url') ?>" target="_blank"><?php the_field('artikel_bron') ?></a>
+            </div>
         </div>
 
         <div class="row clearfix">
@@ -32,13 +37,6 @@ get_header();
                 <?php while (have_posts()) : the_post(); ?>
                     <?php get_template_part('content', 'single'); ?>
                 <?php endwhile; ?>
-            </div>
-        </div>
-
-        <div class="meta-data">
-            <div class="post-source">
-                <span>Bron:</span>
-                <a class="source-link" href="<?php the_field('artikel_url') ?>" target="_blank"><?php the_field('artikel_bron') ?></a>
             </div>
         </div>
 
