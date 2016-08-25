@@ -387,6 +387,61 @@ body.buddypress{
 			font-size:@smallerFontSize;
 		}
 	}
+
+	div.activity-type-tabs{
+		background: @lightStandAloneBg;
+		margin:0 -@spacing;
+
+		li{
+			border-right: 1px solid @grey!important;
+		}
+
+		a{
+			color:@textColor!important;
+		}
+	}
+
+	#activity-filter-select{
+		.displayflex;
+		.align-items(center);
+
+		font-family: @baseFont;
+		margin: 0 @spacing/2 !important;
+		padding: @spacing/2 0 @spacing/2 !important;
+		border: none !important;
+
+		label {
+			margin: 0;
+			font-size: 1.3rem;
+			padding-right: @spacing/4;
+		}
+
+		select,
+		input {
+			font-size: 1.3rem;
+		}
+
+		input[type=submit] {
+			font-size: @smallerFontSize;
+		}
+
+		form {
+			padding: 0 !important;
+		}
+
+		.select-wrapper {
+			width: auto;
+		}
+	}
+
+	#activity-stream{
+		.activity-inner{
+			img{
+				max-width: 50%;
+				margin: 0 auto;
+			}
+		}
+	}
 }
 
 body.members{

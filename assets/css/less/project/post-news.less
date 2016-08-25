@@ -4,6 +4,10 @@ body.post-template-single-nieuws-php{
 		background-position: center center;
 	}
 
+	p{
+		margin-bottom: @spacing/2;
+	}
+
 	strong{
 		color:@black;
 		font-weight:bold;
@@ -53,5 +57,13 @@ body.post-template-single-nieuws-php{
 	article.post .entry-content{
 		margin-bottom: 0;
 		margin-top:@spacing/2;
+	}
+
+	iframe{
+		.displayflex;
+		.justify-content(center);
+		margin:0 auto;
+		max-width: 720px!important;
+    	height: 405px;
 	}
 }

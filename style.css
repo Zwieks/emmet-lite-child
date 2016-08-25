@@ -3837,6 +3837,55 @@ body.buddypress.members .main-container {
   line-height: 1.1rem;
   font-size: 1.1rem;
 }
+#buddypress div.activity-type-tabs {
+  background: #f5f5f5;
+  margin: 0 -2.4rem;
+}
+#buddypress div.activity-type-tabs li {
+  border-right: 1px solid #e6e6e6 !important;
+}
+#buddypress div.activity-type-tabs a {
+  color: #767676 !important;
+}
+#buddypress #activity-filter-select {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  font-family: 'GeosansLight-NMS', sans-serif;
+  margin: 0 1.2rem !important;
+  padding: 1.2rem 0 1.2rem !important;
+  border: none !important;
+}
+#buddypress #activity-filter-select label {
+  margin: 0;
+  font-size: 1.3rem;
+  padding-right: 0.6rem;
+}
+#buddypress #activity-filter-select select,
+#buddypress #activity-filter-select input {
+  font-size: 1.3rem;
+}
+#buddypress #activity-filter-select input[type=submit] {
+  font-size: 1.1rem;
+}
+#buddypress #activity-filter-select form {
+  padding: 0 !important;
+}
+#buddypress #activity-filter-select .select-wrapper {
+  width: auto;
+}
+#buddypress #activity-stream .activity-inner img {
+  max-width: 50%;
+  margin: 0 auto;
+}
 body.members .main-container {
   background: transparent!important;
 }
@@ -4553,6 +4602,12 @@ body.registration #main {
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
+.motopress-text-obj {
+  margin-top: -2.4rem;
+}
+.motopress-text-obj p {
+  margin-bottom: 0;
+}
 .motopress-row {
   margin-bottom: 1.2rem;
 }
@@ -4635,6 +4690,9 @@ body.post-template-single-nieuws-php .header-image.with-header-image {
   background-size: cover;
   background-position: center center;
 }
+body.post-template-single-nieuws-php p {
+  margin-bottom: 1.2rem;
+}
 body.post-template-single-nieuws-php strong {
   color: #333;
   font-weight: bold;
@@ -4684,6 +4742,22 @@ body.post-template-single-nieuws-php img.alignnone {
 body.post-template-single-nieuws-php article.post .entry-content {
   margin-bottom: 0;
   margin-top: 1.2rem;
+}
+body.post-template-single-nieuws-php iframe {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 720px!important;
+  height: 405px;
 }
 .related-posts {
   display: -webkit-box;
