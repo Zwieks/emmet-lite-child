@@ -3466,6 +3466,13 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
 .main-container {
   margin-bottom: 6rem;
 }
+.welcome-right {
+  background-position: center center!important;
+}
+#install h3,
+#accent h3 {
+  color: #fff;
+}
 #footer .site-logo {
   display: none;
 }
