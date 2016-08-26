@@ -220,6 +220,46 @@ body.post-template-single-nieuws-php{
 
 	.row{
 		.displayflex;
+		.flex-wrap(wrap);
+
+		margin:0 -@spacing/2;
+
+		.col-xs-12{
+			width:100%/3;
+			padding:0 @spacing/2;
+
+			@media @bp-TabletSL{
+				.flex-grow(1);
+				width: 50%;
+			}
+
+			@media @bp-MobileM{
+				width: 100%;
+			}
+		}
+
+		.widget{
+			@media @bp-TabletSL{
+				margin-top: @spacing*1.5;
+				margin-bottom: @spacing;
+			}
+
+			@media @bp-MobileM{
+				margin-top: @spacing/2;
+			}
+		}
+
+		.widget-title{
+			@media @bp-MobileM{
+				margin-top: @spacing/2;
+			}
+		}
+	}
+
+	.footer-sidebar{
+		@media @bp-MobileM{
+			padding: @spacing 0;
+		}
 	}
 
 	.bp-menu{

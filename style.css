@@ -3585,6 +3585,50 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
   display: -ms-flexbox;
   display: -ms-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -1.2rem;
+}
+#footer .row .col-xs-12 {
+  width: 33.33333333%;
+  padding: 0 1.2rem;
+}
+@media screen and (max-width: 680px) {
+  #footer .row .col-xs-12 {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer .row .col-xs-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 680px) {
+  #footer .row .widget {
+    margin-top: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer .row .widget {
+    margin-top: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer .row .widget-title {
+    margin-top: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer .footer-sidebar {
+    padding: 2.4rem 0;
+  }
 }
 #footer .bp-menu {
   position: relative;
