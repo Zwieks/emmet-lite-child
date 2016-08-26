@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all single posts
-    Template Name Posts: Tips and Tricks
+   Template Name Posts: Tips and Trick
  * @package WordPress
  * @subpackage Emmet
  * @since Emmet 1.0
