@@ -3379,6 +3379,17 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
   top: 1.2rem;
   left: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+  .header-logo img {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+}
+.header-logo {
+  margin: 0;
+  width: 100%;
+}
 #big-section .section-description {
   letter-spacing: 0.2rem;
 }
@@ -3468,6 +3479,10 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
 }
 .welcome-right {
   background-position: center center!important;
+}
+#third .third-left {
+  background-size: contain;
+  margin-top: 2.4rem;
 }
 #install h3,
 #accent h3 {
@@ -3563,7 +3578,7 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
   background: #27b399;
 }
 #lastnews .lastnews-list .empty-entry-thumbnail {
-  width: 100%;
+  min-width: 100%;
 }
 #footer .site-logo {
   display: none;

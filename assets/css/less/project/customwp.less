@@ -21,6 +21,17 @@ body.post-template-single-nieuws-php{
 	position: absolute;
 	top: @spacing/2;
 	left: @spacing/2;
+
+	@media @bp-TabletS{
+		position: relative;
+		margin: 0 auto;
+		left: 0;
+	}
+}
+
+.header-logo{
+	margin: 0;
+	width: 100%;
 }
 
 #big-section .section-description{
@@ -119,6 +130,13 @@ body.post-template-single-nieuws-php{
 	background-position: center center!important;
 }
 
+#third{
+	.third-left{
+		background-size: contain;
+		margin-top: @spacing;
+	}
+}
+
 #install,
 #accent{
 	h3{
@@ -195,7 +213,7 @@ body.post-template-single-nieuws-php{
 	}
 
 	.lastnews-list .empty-entry-thumbnail{
-		width: 100%;
+		min-width: 100%;
 	}
 }
 
