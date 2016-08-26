@@ -6,7 +6,7 @@ Author: Ronald Zwiers
 */
 ?>
 
-<h3>Meer nieuws</h3>
+<h3>Meer artikelen</h3>
 
 <?php if (have_posts()):
 	$postsArray = array();

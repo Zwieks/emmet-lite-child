@@ -3477,6 +3477,11 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
 .main-container {
   margin-bottom: 6rem;
 }
+@media screen and (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+}
 .welcome-right {
   background-position: center center!important;
 }
