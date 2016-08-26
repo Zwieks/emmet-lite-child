@@ -4808,6 +4808,8 @@ article.category-nieuws .motopress-posts-grid-thumbnail {
   -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 2.4rem;
+  position: relative;
+  padding-top: 50%;
 }
 article.category-nieuws .motopress-posts-grid-thumbnail:hover,
 article.category-nieuws .motopress-posts-grid-thumbnail:focus {
@@ -4818,6 +4820,8 @@ article.category-nieuws .motopress-posts-grid-thumbnail:focus {
   transform: scale(1.02);
 }
 article.category-nieuws .motopress-posts-grid-thumbnail img {
+  position: absolute;
+  top: 0;
   margin-bottom: 0;
 }
 article.category-nieuws .motopress-posts-grid-title {
