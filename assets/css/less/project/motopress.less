@@ -64,7 +64,8 @@ body.registration{
 	margin-bottom: @spacing/2;
 }
 
-article.category-nieuws{
+article.category-nieuws,
+article.category-tips-and-tricks{
 	.displayflex;
 	.flex-direction(column);
 
@@ -78,6 +79,7 @@ article.category-nieuws{
 		margin-bottom: @spacing;
 		position: relative;
 		padding-top: 50%;
+		overflow: hidden;
 
 		&:hover,
 		&:focus{
@@ -85,6 +87,7 @@ article.category-nieuws{
 		}
 
 		img{
+			width: 100%;
 			position: absolute;
 			top:0;
 			margin-bottom: 0;

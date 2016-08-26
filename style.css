@@ -4774,7 +4774,8 @@ body.registration #main {
 .motopress-row {
   margin-bottom: 1.2rem;
 }
-article.category-nieuws {
+article.category-nieuws,
+article.category-tips-and-tricks {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -4787,7 +4788,8 @@ article.category-nieuws {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-article.category-nieuws * {
+article.category-nieuws *,
+article.category-tips-and-tricks * {
   -webkit-box-ordinal-group: 3;
   -moz-box-ordinal-group: 3;
   -ms-flex-order: 3;
@@ -4796,7 +4798,8 @@ article.category-nieuws * {
   -ms-order: 3;
   order: 3;
 }
-article.category-nieuws .motopress-posts-grid-thumbnail {
+article.category-nieuws .motopress-posts-grid-thumbnail,
+article.category-tips-and-tricks .motopress-posts-grid-thumbnail {
   -webkit-box-ordinal-group: 1;
   -moz-box-ordinal-group: 1;
   -ms-flex-order: 1;
@@ -4810,28 +4813,36 @@ article.category-nieuws .motopress-posts-grid-thumbnail {
   margin-bottom: 2.4rem;
   position: relative;
   padding-top: 50%;
+  overflow: hidden;
 }
 article.category-nieuws .motopress-posts-grid-thumbnail:hover,
-article.category-nieuws .motopress-posts-grid-thumbnail:focus {
+article.category-tips-and-tricks .motopress-posts-grid-thumbnail:hover,
+article.category-nieuws .motopress-posts-grid-thumbnail:focus,
+article.category-tips-and-tricks .motopress-posts-grid-thumbnail:focus {
   -webkit-transform: scale(1.02);
   -moz-transform: scale(1.02);
   -ms-transform: scale(1.02);
   -o-transform: scale(1.02);
   transform: scale(1.02);
 }
-article.category-nieuws .motopress-posts-grid-thumbnail img {
+article.category-nieuws .motopress-posts-grid-thumbnail img,
+article.category-tips-and-tricks .motopress-posts-grid-thumbnail img {
+  width: 100%;
   position: absolute;
   top: 0;
   margin-bottom: 0;
 }
-article.category-nieuws .motopress-posts-grid-title {
+article.category-nieuws .motopress-posts-grid-title,
+article.category-tips-and-tricks .motopress-posts-grid-title {
   margin-bottom: 1.2rem;
 }
-article.category-nieuws .motopress-posts-grid-content {
+article.category-nieuws .motopress-posts-grid-content,
+article.category-tips-and-tricks .motopress-posts-grid-content {
   margin-top: 0;
   margin-bottom: 1.2rem;
 }
-article.category-nieuws .motopress-posts-grid-meta {
+article.category-nieuws .motopress-posts-grid-meta,
+article.category-tips-and-tricks .motopress-posts-grid-meta {
   -webkit-box-ordinal-group: 2;
   -moz-box-ordinal-group: 2;
   -ms-flex-order: 2;
@@ -4841,16 +4852,20 @@ article.category-nieuws .motopress-posts-grid-meta {
   order: 2;
   margin-bottom: 0.6rem;
 }
-article.category-nieuws .motopress-posts-grid-meta i {
+article.category-nieuws .motopress-posts-grid-meta i,
+article.category-tips-and-tricks .motopress-posts-grid-meta i {
   font-size: 1.1rem;
 }
-article.category-nieuws .motopress-posts-grid-meta p {
+article.category-nieuws .motopress-posts-grid-meta p,
+article.category-tips-and-tricks .motopress-posts-grid-meta p {
   margin: 0;
 }
-article.category-nieuws .motopress-posts-grid-meta p:after {
+article.category-nieuws .motopress-posts-grid-meta p:after,
+article.category-tips-and-tricks .motopress-posts-grid-meta p:after {
   content: '' !important;
 }
-article.category-nieuws .motopress-posts-grid-more {
+article.category-nieuws .motopress-posts-grid-more,
+article.category-tips-and-tricks .motopress-posts-grid-more {
   margin: 0 0 4.8rem 0;
 }
 body.post-template-single-nieuws-php .header-image.with-header-image {
