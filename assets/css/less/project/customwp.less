@@ -1,26 +1,21 @@
 /* Menu items */
-body.post-template-single-nieuws-php{
-
-	article.post{
-		.entry-content{
-			.displayflex;
-			.flex-direction(column);
-		}
-	}
-
-	#main-menu{
-		a[href*=nieuws]{
-			color:@black;
-		}
-	}
-}
-
 .header-logo img{
 	.transition();
 	max-width: 18rem;
 	position: absolute;
 	top: @spacing/2;
 	left: @spacing/2;
+
+	@media @bp-TabletS{
+		position: relative;
+		margin: 0 auto;
+		left: 0;
+	}
+}
+
+.header-logo{
+	margin: 0;
+	width: 100%;
 }
 
 #big-section .section-description{
@@ -113,10 +108,21 @@ body.post-template-single-nieuws-php{
 
 .main-container{
 	margin-bottom:@spacing*2.5;
+
+	@media @bp-TabletS{
+		width: 100%;
+	}
 }
 
 .welcome-right{
 	background-position: center center!important;
+}
+
+#third{
+	.third-left{
+		background-size: contain;
+		margin-top: @spacing;
+	}
 }
 
 #install,
@@ -196,7 +202,7 @@ body.post-template-single-nieuws-php{
 	}
 
 	.lastnews-list .empty-entry-thumbnail{
-		width: 100%;
+		min-width: 100%;
 	}
 }
 
