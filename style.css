@@ -3473,6 +3473,98 @@ body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
 #accent h3 {
   color: #fff;
 }
+#lastnews .lastnews-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  margin: 0 -1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #lastnews .lastnews-list {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 2.4rem;
+  }
+}
+#lastnews .post {
+  padding: 0 1.2rem;
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #lastnews .post {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #lastnews .post {
+    width: 100%;
+    padding-bottom: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 3.6rem;
+    border-bottom: 1px solid #d9dde0;
+  }
+}
+#lastnews .entry-thumbnail a {
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: block;
+  padding-top: 66.66666667%;
+  overflow: hidden;
+  width: 100%;
+}
+#lastnews .entry-thumbnail a:hover,
+#lastnews .entry-thumbnail a:focus {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+#lastnews .entry-thumbnail img,
+#lastnews .entry-thumbnail span {
+  display: block;
+  margin: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#lastnews .entry-thumbnail span {
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-self: center;
+  align-self: center;
+}
+#lastnews .entry-thumbnail img {
+  width: 100%;
+}
+#lastnews .empty-entry-thumbnail {
+  height: auto;
+}
+#lastnews .empty-entry-thumbnail a {
+  height: 66.66666667%;
+  background: #27b399;
+}
+#lastnews .lastnews-list .empty-entry-thumbnail {
+  width: 100%;
+}
 #footer .site-logo {
   display: none;
 }
