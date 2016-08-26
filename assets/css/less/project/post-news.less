@@ -1,4 +1,18 @@
-body.post-template-single-nieuws-php{
+body.post-template-single-nieuws-php,
+body.post-template-single-tipsandtrick-php{
+	article.post{
+		.entry-content{
+			.displayflex;
+			.flex-direction(column);
+		}
+	}
+
+	#main-menu{
+		a[href*=nieuws]{
+			color:@black;
+		}
+	}
+
 	.header-image.with-header-image{
 		background-size:cover;
 		background-position: center center;

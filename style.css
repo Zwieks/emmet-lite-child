@@ -3353,22 +3353,6 @@ form ol {
 }
 /* PLACE YOUR OWN CSS STYLING DOWN HERE WITH @IMPORTS */
 /* Menu items */
-body.post-template-single-nieuws-php article.post .entry-content {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-body.post-template-single-nieuws-php #main-menu a[href*=nieuws] {
-  color: #333;
-}
 .header-logo img {
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
@@ -4868,22 +4852,45 @@ article.category-nieuws .motopress-posts-grid-more,
 article.category-tips-and-tricks .motopress-posts-grid-more {
   margin: 0 0 4.8rem 0;
 }
-body.post-template-single-nieuws-php .header-image.with-header-image {
+body.post-template-single-nieuws-php article.post .entry-content,
+body.post-template-single-tipsandtrick-php article.post .entry-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+body.post-template-single-nieuws-php #main-menu a[href*=nieuws],
+body.post-template-single-tipsandtrick-php #main-menu a[href*=nieuws] {
+  color: #333;
+}
+body.post-template-single-nieuws-php .header-image.with-header-image,
+body.post-template-single-tipsandtrick-php .header-image.with-header-image {
   background-size: cover;
   background-position: center center;
 }
-body.post-template-single-nieuws-php p {
+body.post-template-single-nieuws-php p,
+body.post-template-single-tipsandtrick-php p {
   margin-bottom: 1.2rem;
 }
-body.post-template-single-nieuws-php strong {
+body.post-template-single-nieuws-php strong,
+body.post-template-single-tipsandtrick-php strong {
   color: #333;
   font-weight: bold;
   font-size: 1.8rem;
 }
-body.post-template-single-nieuws-php .date {
+body.post-template-single-nieuws-php .date,
+body.post-template-single-tipsandtrick-php .date {
   color: #27b399;
 }
-body.post-template-single-nieuws-php .meta-data {
+body.post-template-single-nieuws-php .meta-data,
+body.post-template-single-tipsandtrick-php .meta-data {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -4897,35 +4904,45 @@ body.post-template-single-nieuws-php .meta-data {
   justify-content: space-between;
 }
 body.post-template-single-nieuws-php .post .entry-footer,
+body.post-template-single-tipsandtrick-php .post .entry-footer,
 body.post-template-single-nieuws-php .portfolio .entry-footer,
-body.post-template-single-nieuws-php .post .entry-thumbnail {
+body.post-template-single-tipsandtrick-php .portfolio .entry-footer,
+body.post-template-single-nieuws-php .post .entry-thumbnail,
+body.post-template-single-tipsandtrick-php .post .entry-thumbnail {
   display: none;
 }
-body.post-template-single-nieuws-php .post-source {
+body.post-template-single-nieuws-php .post-source,
+body.post-template-single-tipsandtrick-php .post-source {
   text-align: right;
   width: auto;
   color: #27b399;
 }
-body.post-template-single-nieuws-php .post-source .source-link {
+body.post-template-single-nieuws-php .post-source .source-link,
+body.post-template-single-tipsandtrick-php .post-source .source-link {
   color: #333;
   font-weight: bold;
 }
-body.post-template-single-nieuws-php img.alignleft {
+body.post-template-single-nieuws-php img.alignleft,
+body.post-template-single-tipsandtrick-php img.alignleft {
   margin: 1.2rem 2.4rem 1.2rem 0;
 }
-body.post-template-single-nieuws-php img.alignright {
+body.post-template-single-nieuws-php img.alignright,
+body.post-template-single-tipsandtrick-php img.alignright {
   margin: 1.2rem 0 1.2rem 2.4rem;
 }
-body.post-template-single-nieuws-php img.alignnone {
+body.post-template-single-nieuws-php img.alignnone,
+body.post-template-single-tipsandtrick-php img.alignnone {
   width: 100%;
   padding: 2.4rem 4.8rem;
   margin: 0;
 }
-body.post-template-single-nieuws-php article.post .entry-content {
+body.post-template-single-nieuws-php article.post .entry-content,
+body.post-template-single-tipsandtrick-php article.post .entry-content {
   margin-bottom: 0;
   margin-top: 1.2rem;
 }
-body.post-template-single-nieuws-php iframe {
+body.post-template-single-nieuws-php iframe,
+body.post-template-single-tipsandtrick-php iframe {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
