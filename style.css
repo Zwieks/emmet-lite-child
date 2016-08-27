@@ -934,7 +934,8 @@ html .cookie-explanation button.request-cookies,
 [type=file]::-webkit-file-upload-button,
 .motopress-btn,
 .call-to-action,
-.roll-button {
+.roll-button,
+.emmet .motopress-posts-grid-obj .motopress-load-more {
   display: inline-block;
   margin-bottom: 2.4rem;
   cursor: pointer;
@@ -2505,7 +2506,8 @@ html .cookie-explanation button.request-cookies,
 [type=file]::-webkit-file-upload-button,
 .motopress-btn,
 .call-to-action,
-.roll-button {
+.roll-button,
+.emmet .motopress-posts-grid-obj .motopress-load-more {
   -webkit-transition: 0.15s ease-out;
   -moz-transition: 0.15s ease-out;
   -o-transition: 0.15s ease-out;
@@ -2536,7 +2538,9 @@ html .cookie-explanation button.request-cookies:focus,
 .call-to-action:hover,
 .call-to-action:focus,
 .roll-button:hover,
-.roll-button:focus {
+.roll-button:focus,
+.emmet .motopress-posts-grid-obj .motopress-load-more:hover,
+.emmet .motopress-posts-grid-obj .motopress-load-more:focus {
   background-color: #fff;
   color: #c2405f;
 }
@@ -2547,7 +2551,8 @@ html div#cookie-bar span.cookie-buttons .allow-cookies:before,
 html .cookie-explanation button.request-cookies:before,
 .motopress-btn:before,
 .call-to-action:before,
-.roll-button:before {
+.roll-button:before,
+.emmet .motopress-posts-grid-obj .motopress-load-more:before {
   float: right;
   margin-left: 0.6rem;
 }
@@ -3425,6 +3430,16 @@ form ol {
 .site-header.fixed .header-logo img {
   max-width: 11rem;
   top: 0.6rem;
+}
+.site-header.fixed #navbar {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
 }
 .site-main .form-control,
 .site-main input[type="text"],
@@ -4395,6 +4410,9 @@ body.register #register-page form {
 body.bbpress:not(.bp-user) #main-menu a[href*=forums] {
   color: #333;
 }
+body.bbpress .container {
+  width: 100%;
+}
 body.bbpress.custom-background.pages-background {
   background: url('images/loginBg.jpg') no-repeat center center fixed !important;
   background-size: cover!important;
@@ -4419,7 +4437,21 @@ body.bbpress #bbp_search_submit {
 body.bbpress #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar,
 body.bbpress #bbpress-forums div.odd,
 body.bbpress #bbpress-forums ul.odd {
-  background: #fff !important;
+  background: #f5f5f5!important;
+}
+body.bbpress #bbpress-forums #qt_bbp_reply_content_toolbar input {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #555d66;
+  letter-spacing: normal;
+  margin: 2px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 0px;
+  font-size: 1.4rem;
 }
 body.bbpress .bbp-pagination {
   background: #fff;
@@ -4607,6 +4639,26 @@ body.bbpress #bbpress-forums fieldset.bbp-form legend {
 }
 body.bbpress li.bbp-header div.bbp-reply-content span#subscription-toggle {
   color: transparent;
+}
+body.bbpress #bbpress-forums div.bbp-topic-content img,
+body.bbpress #bbpress-forums div.bbp-reply-content img,
+body.bbpress #bbpress-forums div.bbp-topic-content iframe,
+body.bbpress #bbpress-forums div.bbp-reply-content iframe {
+  width: auto!important;
+  height: 100%!important;
+  max-height: 60rem;
+  max-width: 60%;
+}
+@media screen and (max-width: 768px) {
+  body.bbpress #bbpress-forums div.bbp-topic-content img,
+  body.bbpress #bbpress-forums div.bbp-reply-content img,
+  body.bbpress #bbpress-forums div.bbp-topic-content iframe,
+  body.bbpress #bbpress-forums div.bbp-reply-content iframe {
+    max-width: 100%;
+  }
+}
+body.bbpress .ytp-thumbnail-overlay-image {
+  background-size: contain!important;
 }
 body.bbpress #bbpress-forums ul.bbp-replies div.bbp-reply-header {
   margin-top: 1.2rem;
@@ -4852,6 +4904,27 @@ article.category-nieuws .motopress-posts-grid-more,
 article.category-tips-and-tricks .motopress-posts-grid-more {
   margin: 0 0 4.8rem 0;
 }
+.emmet .motopress-posts-grid-obj .motopress-posts-grid-pagination,
+.emmet .motopress-posts-grid-obj .motopress-load-more-obj {
+  margin-top: 0;
+}
+.emmet .motopress-posts-grid-obj .motopress-load-more {
+  font-family: 'GeosansLight-NMS', sans-serif;
+  padding: 1.2rem;
+  min-width: auto;
+  height: auto;
+  letter-spacing: 4px;
+  border: 2px solid #c2405f;
+  background: #fff;
+  color: #c2405f;
+  margin: 0;
+}
+.emmet .motopress-posts-grid-obj .motopress-load-more:hover,
+.emmet .motopress-posts-grid-obj .motopress-load-more:focus {
+  background: #c2405f;
+  border: 2px solid #c2405f;
+  color: #fff;
+}
 body.post-template-single-nieuws-php article.post .entry-content,
 body.post-template-single-tipsandtrick-php article.post .entry-content,
 body.single-post article.post .entry-content {
@@ -5063,6 +5136,46 @@ body.post-template-single-tipsandtrick-php #main-menu a[href*=tips] {
 }
 .apss-social-share .apss-single-icon {
   margin-right: 1.2rem;
+}
+div.mce-edit-area {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #4f4f4f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.4;
+  border: 1px solid #d4d4d4!important;
+}
+div.mce-toolbar-grp {
+  border: none!important;
+}
+.switch-tmce {
+  background: #f6f7f7;
+}
+.wp-editor-tabs button {
+  background: #f6f7f7!important;
+  color: #767676 !important;
+}
+.html-active .switch-html,
+.tmce-active .switch-tmce {
+  background: #27b399 !important;
+  color: #fff !important;
+}
+#mceu_20 {
+  display: none;
+}
+body.bbpress #bbpress-forums #qt_bbp_reply_content_toolbar input {
+  padding: 18px 20px;
+}
+body.bbpress #bbpress-forums fieldset.bbp-form textarea {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  background: #fff;
 }
 .page-games-en-gadgets .main-container {
   background: transparent!important;

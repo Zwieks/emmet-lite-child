@@ -122,3 +122,28 @@ article.category-tips-and-tricks{
 		margin:0 0 @spacing*2 0;
 	}
 }
+
+.emmet .motopress-posts-grid-obj .motopress-posts-grid-pagination, 
+.emmet .motopress-posts-grid-obj .motopress-load-more-obj{
+	margin-top: 0;
+}
+
+.emmet .motopress-posts-grid-obj .motopress-load-more{
+	&:extend(.btn all);
+	font-family: @baseFont;
+	padding: @spacing/2;
+    min-width: auto;
+    height: auto;
+    letter-spacing: 4px;
+    border:2px solid @primColor;
+    background: @white;
+    color:@primColor;
+    margin: 0;
+
+    &:hover,
+    &:focus{
+    	background:@primColor;
+    	border:2px solid @primColor;
+    	color:@white;
+    }
+}

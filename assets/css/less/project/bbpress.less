@@ -8,6 +8,10 @@ body.bbpress{
 		}
 	}
 
+	.container{
+		width: 100%;
+	}
+
 	&.custom-background.pages-background{
 		background: url(@backgroundimage) no-repeat center center fixed!important;
 		background-size:cover!important;
@@ -38,7 +42,20 @@ body.bbpress{
 	#bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar, 
 	#bbpress-forums div.odd, 
 	#bbpress-forums ul.odd{
-		background: @white!important;
+		background: #f5f5f5!important;
+	}
+
+	#bbpress-forums #qt_bbp_reply_content_toolbar input{
+		.border-radius(4px);
+		color:#555d66;
+		letter-spacing: normal;
+		margin: 2px;
+		padding: 20px;
+	    font-weight: bold;
+	    font-size: 20px;
+	    font-family: "Open Sans",sans-serif;
+	    line-height: 0px;
+	    font-size: 1.4rem;
 	}
 
 	.bbp-pagination{
@@ -252,6 +269,24 @@ body.bbpress{
 
 	li.bbp-header div.bbp-reply-content span#subscription-toggle{
 		color: transparent;
+	}
+
+	#bbpress-forums div.bbp-topic-content img, 
+	#bbpress-forums div.bbp-reply-content img,
+	#bbpress-forums div.bbp-topic-content iframe, 
+	#bbpress-forums div.bbp-reply-content iframe{
+		width: auto!important;
+   		height: 100%!important;
+    	max-height: 60rem;
+    	max-width: 60%;
+
+    	@media @bp-TabletS{
+    		max-width: 100%;
+    	}
+	}
+
+   	.ytp-thumbnail-overlay-image{
+		background-size: contain!important;
 	}
 
 	#bbpress-forums ul.bbp-replies div.bbp-reply-header{
