@@ -3375,6 +3375,29 @@ form ol {
     left: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  #header .top-header .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-direction: inherit;
+    -moz-flex-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+}
 .header-logo {
   margin: 0;
   width: 100%;
@@ -3668,6 +3691,9 @@ form ol {
   font-family: 'nms';
   content: 'b';
   right: 0.6rem;
+}
+.home-page #lastnews .section-buttons {
+  margin-top: 2.4rem;
 }
 #main {
   display: -webkit-box;
@@ -5193,6 +5219,32 @@ body.bbpress #bbpress-forums fieldset.bbp-form textarea {
   -o-transform: scale(1);
   transform: scale(1);
 }
+@media screen and (max-width: 768px) {
+  .page-games-en-gadgets .motopress-image-obj {
+    margin-bottom: 2.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-games-en-gadgets .motopress-image-obj a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    margin-bottom: 2.4rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-games-en-gadgets .motopress-image-obj img {
+    max-height: 28.8rem;
+  }
+}
 .page-games-en-gadgets .motopress-row {
   display: -webkit-box !important;
   display: -moz-box !important;
@@ -5204,6 +5256,15 @@ body.bbpress #bbpress-forums fieldset.bbp-form textarea {
   margin-bottom: 2.4rem;
   background: #fff;
   padding: 2.4rem 2.4rem 0;
+}
+@media screen and (max-width: 768px) {
+  .page-games-en-gadgets .motopress-row {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 2.4rem 1.2rem 1.2rem;
+  }
 }
 .page-games-en-gadgets .motopress-clmn {
   display: -webkit-box !important;
@@ -5234,4 +5295,10 @@ body.bbpress #bbpress-forums fieldset.bbp-form textarea {
   -moz-flex-grow: 1;
   -ms-flex-grow: 1;
   flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  .page-games-en-gadgets .motopress-button-obj a {
+    width: 100%;
+    padding: 1.8rem 1.2rem;
+  }
 }

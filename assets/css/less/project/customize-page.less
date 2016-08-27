@@ -10,6 +10,25 @@
 		&:focus{
 			.scale(1);
 		}
+
+		@media @bp-TabletS{
+			margin-bottom: @spacing;
+		}	
+
+		a{
+			@media @bp-TabletS{
+				.displayflex;
+				.justify-content(center);
+
+				margin-bottom: @spacing!important;
+			}
+		}
+
+		img{
+			@media @bp-TabletS{
+				max-height: @spacing*12;
+			}
+		}
 	}
 
 	.motopress-row{
@@ -17,6 +36,11 @@
 		margin-bottom: @spacing;
 		background: @white;
 		padding:@spacing @spacing 0;
+
+		@media @bp-TabletS{
+			.flex-wrap(wrap);
+			padding: @spacing @spacing/2 @spacing/2;
+		}
 	}
 
 	.motopress-clmn{
@@ -27,6 +51,15 @@
 		.motopress-row{
 			.displayflex;
 			.flex-grow(1);
+		}
+	}
+
+	.motopress-button-obj{
+		a{
+			@media @bp-TabletS{
+				width: 100%;
+				padding: 1.8rem @spacing/2;
+			}
 		}
 	}
 }

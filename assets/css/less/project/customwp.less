@@ -13,6 +13,15 @@
 	}
 }
 
+#header .top-header .container{
+	@media @bp-TabletS{
+		.displayflex;
+	    .justify-content(space-between);
+	    .flex-direction(inherit);
+	    .align-items(center);
+	}
+}
+
 .header-logo{
 	margin: 0;
 	width: 100%;
@@ -288,4 +297,8 @@
 			right:@spacing/4;
 		}
 	}
+}
+
+.home-page #lastnews .section-buttons{
+	margin-top: @spacing;
 }
