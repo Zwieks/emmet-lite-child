@@ -3608,6 +3608,55 @@ form ol {
 #lastnews .lastnews-list .empty-entry-thumbnail {
   min-width: 100%;
 }
+#features .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -1.2rem;
+}
+#features .theme_widget_features {
+  width: 25%;
+  padding: 0 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  #features .theme_widget_features {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #features .theme_widget_features {
+    width: 100%;
+  }
+}
+#features .features-more {
+  position: absolute;
+  bottom: 0;
+}
+#features .features-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
 #footer .site-logo {
   display: none;
 }
@@ -5040,6 +5089,21 @@ body.single-post .meta-data {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
+body.post-template-single-nieuws-php .title-wrapper,
+body.post-template-single-tipsandtrick-php .title-wrapper,
+body.single-post .title-wrapper {
+  padding: 1.2rem 0 0;
+}
+body.post-template-single-nieuws-php .title-wrapper .review-title,
+body.post-template-single-tipsandtrick-php .title-wrapper .review-title,
+body.single-post .title-wrapper .review-title {
+  margin-bottom: 0!important;
+}
+body.post-template-single-nieuws-php .title-wrapper .review-subtitle,
+body.post-template-single-tipsandtrick-php .title-wrapper .review-subtitle,
+body.single-post .title-wrapper .review-subtitle {
+  margin-top: 1.2rem;
+}
 body.post-template-single-nieuws-php .post .entry-footer,
 body.post-template-single-tipsandtrick-php .post .entry-footer,
 body.single-post .post .entry-footer,
@@ -5200,12 +5264,18 @@ body.post-template-single-tipsandtrick-php #main-menu a[href*=tips] {
   -moz-justify-content: flex-end;
   -ms-justify-content: flex-end;
   justify-content: flex-end;
+  margin-bottom: 0!important;
 }
 .apss-social-share .apss-share-text {
   padding-right: 2.4rem;
+  padding-top: 1rem;
 }
 .apss-social-share .apss-single-icon {
   margin-right: 1.2rem;
+}
+.apss-social-share div {
+  font-family: 'GeosansLight-NMS', sans-serif !important;
+  margin-bottom: 0!important;
 }
 div.mce-edit-area {
   -webkit-border-radius: 0 0 4px 4px;

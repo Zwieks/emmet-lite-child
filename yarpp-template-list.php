@@ -6,10 +6,9 @@ Author: Ronald Zwiers
 */
 ?>
 
-<h3>Lees ook</h3>
-
 <?php if (have_posts()):
 	$postsArray = array();
+	echo '<h3>Lees ook</h3>';
 	while (have_posts()) : the_post();
 		$postsArray[] = '<div class="more-news-item"><date class="date">'.get_the_time('d F Y').'</date><a href="'.get_permalink().'" rel="bookmark">'.get_the_title().'</a></div><!-- ('.get_the_score().')-->';
 	endwhile;

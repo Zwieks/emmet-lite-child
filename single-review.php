@@ -34,7 +34,7 @@ get_header();
 
         <section class="title-wrapper">
             <h2 class="review-title"><?php the_field('review_titel') ?></h2>    
-            <h3 class="review-title"><?php the_field('review_subtitel') ?></h3> 
+            <h3 class="review-subtitle"><?php the_field('review_subtitel') ?></h3> 
         </section>    
 
         <div class="row clearfix">

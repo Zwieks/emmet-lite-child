@@ -27,4 +27,10 @@ function add_slug_body_class( $classes ) {
   return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+add_action('wp_logout','go_home');
+function go_home(){
+  wp_redirect( home_url() );
+  exit();
+}
 // END ENQUEUE PARENT ACTION

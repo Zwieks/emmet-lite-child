@@ -220,6 +220,39 @@
 	}
 }
 
+#features{
+	.row{
+		.displayflex;
+		.flex-wrap(wrap);
+
+		margin:0 -@spacing/2;
+	}
+
+	.theme_widget_features{
+		width: 25%;
+		padding:0 @spacing/2;
+
+		@media @bp-TabletS{
+			width: 50%;
+		}
+
+		@media @bp-MobileM{
+			width: 100%;
+		}
+	}
+
+	.features-more{
+		position: absolute;
+		bottom:0;
+	}
+
+	.features-box{
+		.displayflex;
+		.flex-direction(column);
+		.align-items(center);
+	}
+}
+
 #footer{
 	.site-logo{
 		display: none;
