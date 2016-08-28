@@ -1,6 +1,22 @@
 body.post-template-single-nieuws-php,
 body.post-template-single-tipsandtrick-php,
 body.single-post{
+	h3,
+	.gh-sectionHeader{
+		margin-bottom:0;
+		margin-top:@spacing;
+	}
+
+	h2{
+		color:@secColor;
+		text-transform: uppercase;
+		margin-bottom:@spacing!important;
+	}
+
+	iframe{
+		max-width: 100%!important;
+	}
+
 	article.post{
 		.entry-content{
 			.displayflex;
@@ -17,6 +33,10 @@ body.single-post{
 	.header-image.with-header-image{
 		background-size:cover;
 		background-position: center center;
+
+		h1{
+			text-transform: none;
+		}
 	}
 
 	p{
@@ -74,12 +94,24 @@ body.single-post{
 		margin-top:@spacing/2;
 	}
 
+	article.post{
+		div{
+			margin-bottom: @spacing/2;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+	}
+
 	iframe{
 		.displayflex;
 		.justify-content(center);
 		margin:0 auto;
-		max-width: 720px!important;
-    	height: 405px;
+	}
+
+	.article-body-snippets{
+		h2{
+			margin-bottom: 0!important;
+		}
 	}
 }
 

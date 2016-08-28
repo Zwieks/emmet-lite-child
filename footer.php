@@ -77,7 +77,7 @@
                     </span>
 					<?php
 					?>
-					  <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>" target="_blank"><?php bloginfo('name'); ?></a>
+					  <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>" target="_blank"><?php bloginfo('name'); ?></a> | <a href="mailto:info@nomansskycommunity.nl" title="Mail ons">info@nomansskycommunity.nl</a> | <a href="/privacy-policy" title="Privacy Poliy">Privacy Policy</a>
 				</p><!-- .copyright -->
 			</div>
 		</div>
